@@ -1,0 +1,9 @@
+D:\Myprj\deker_mvc\DBEntity\bin\Debug\DBEntity.dll
+D:\Myprj\deker_mvc\DBEntity\bin\Debug\DBEntity.pdb
+D:\Myprj\deker_mvc\DBEntity\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\Myprj\deker_mvc\DBEntity\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\Myprj\deker_mvc\DBEntity\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+D:\Myprj\deker_mvc\DBEntity\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+D:\Myprj\deker_mvc\DBEntity\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+D:\Myprj\deker_mvc\DBEntity\obj\Debug\DBEntity.dll
+D:\Myprj\deker_mvc\DBEntity\obj\Debug\DBEntity.pdb

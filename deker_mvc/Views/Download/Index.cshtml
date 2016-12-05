@@ -1,0 +1,936 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1><strong>资料下载</strong></h1>
+        </div>
+    </div>
+    <div class="row" style="margin-left:0px;margin-right:0px;border-top:2px dotted #dcdcdc;">
+        <div class="col-md-12">
+            &nbsp;
+        </div>
+    </div>
+
+    <div class="row" style="margin-left:0px;margin-right:0px;">
+        <div class="col-sm-home-1 col-md-home-1 col-lg-home-1 col-xs-6 empty" style="border-right:10px solid #ffffff;">
+            <div class="download-head text-center dropdown  active ">
+                <a href="#" id="linksoftware" class="activewhite colorgray dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+                    <h3 class="download-head-text"><i class="icon-download icon-large activewhite colorgray"></i> 软件</h3>
+                </a>
+                <ul class="dropdown-menu popover bottom" role="menu" aria-labelledby="linksoftware" style="width:100%;margin-top:0px;">
+                    <li class="arrow"></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="index.htm"><span class="colorgray2">❶</span> 全部</a></li>
+                    <li class="divider" style="padding:0px;margin:0px;"></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="../hmi/index.htm"><span class="colorgray2">❷</span> 人机界面</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="../hmi/program/index.htm"><span class="colorgray2">❷-❶</span> 人机界面-编程软件</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="../hmi/com/index.htm"><span class="colorgray2">❷-❷</span> 人机界面-通信实例</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="../hmi/sample/index.htm"><span class="colorgray2">❷-❸</span> 人机界面-例子程序</a></li>
+                    <li class="divider" style="padding:0px;margin:0px;"></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="../plc/index.htm"><span class="colorgray2">❸</span> PLC</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="../plc/program/index.htm"><span class="colorgray2">❸-❶</span> PLC-编程软件</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="../plc/com/index.htm"><span class="colorgray2">❸-❷</span> PLC-通信实例</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="../plc/sample/index.htm"><span class="colorgray2">❸-❸</span> PLC-例子程序</a></li>
+                    <li class="divider" style="padding:0px;margin:0px;"></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="../servo/index.htm"><span class="colorgray2">❹</span> 伺服驱动器/电机</a></li>
+                    <li class="divider" style="padding:0px;margin:0px;"></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="../stepper/index.htm"><span class="colorgray2">❺</span> 步进驱动器/电机</a></li>
+                    <li class="divider" style="padding:0px;margin:0px;"></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="../vdf/index.htm"><span class="colorgray2">❻</span> 变频器</a></li>
+                    <li class="divider" style="padding:0px;margin:0px;"></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="../smartfactory/index.htm"><span class="colorgray2">❼</span> 智慧工厂</a></li>
+                    <li class="divider" style="padding:0px;margin:0px;"></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="../other/index.htm"><span class="colorgray2">❽</span> 其它</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-sm-home-1 col-md-home-1 col-lg-home-1 col-xs-6 empty" style="border-left:10px solid #ffffff;border-right:10px solid #ffffff;">
+            <div class="download-head text-center dropdown ">
+                <a href="#" id="linkmodel" class="activewhite colorgray dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+                    <h3 class="download-head-text"><i class="icon-download icon-large activewhite colorgray"></i> 选型手册</h3>
+                </a>
+                <ul class="dropdown-menu popover bottom" role="menu" aria-labelledby="linkmodel" style="width:100%;margin-top:0px;">
+                    <li class="arrow"></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="../../model/all/index.htm"><span class="colorgray2">❶</span> 全部</a></li>
+                    <li class="divider" style="padding:0px;margin:0px;"></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="../../model/hmi/index.htm"><span class="colorgray2">❷</span> 人机界面</a></li>
+                    <li class="divider" style="padding:0px;margin:0px;"></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="../../model/plc/index.htm"><span class="colorgray2">❸</span> PLC</a></li>
+                    <li class="divider" style="padding:0px;margin:0px;"></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="../../model/servo/index.htm"><span class="colorgray2">❹</span> 伺服驱动器/电机</a></li>
+                    <li class="divider" style="padding:0px;margin:0px;"></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="../../model/stepper/index.htm"><span class="colorgray2">❺</span> 步进驱动器/电机</a></li>
+                    <li class="divider" style="padding:0px;margin:0px;"></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="../../model/vdf/index.htm"><span class="colorgray2">❻</span> 变频器</a></li>
+                    <li class="divider" style="padding:0px;margin:0px;"></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="../../model/smartfactory/index.htm"><span class="colorgray2">❼</span> 智慧工厂</a></li>
+                    <li class="divider" style="padding:0px;margin:0px;"></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="../../model/other/index.htm"><span class="colorgray2">❽</span> 其它</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-sm-home-1 col-md-home-1 col-lg-home-1 col-xs-6 empty" style="border-left:10px solid #ffffff;border-right:10px solid #ffffff;">
+            <div class="download-head text-center dropdown ">
+                <a href="#" id="linkmanual" class="activewhite colorgray dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    <h3 class="download-head-text"><i class="icon-download icon-large activewhite colorgray"></i> 使用手册</h3>
+                </a>
+                <ul class="dropdown-menu popover bottom" role="menu" aria-labelledby="linkmanual" style="width:100%;margin-top:0px;">
+                    <li class="arrow"></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="../../use/all/index.htm"><span class="colorgray2">❶</span> 全部</a></li>
+                    <li class="divider" style="padding:0px;margin:0px;"></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="../../use/hmi/index.htm"><span class="colorgray2">❷</span> 人机界面</a></li>
+                    <li class="divider" style="padding:0px;margin:0px;"></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="../../use/plc/index.htm"><span class="colorgray2">❸</span> PLC</a></li>
+                    <li class="divider" style="padding:0px;margin:0px;"></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="../../use/servo/index.htm"><span class="colorgray2">❹</span> 伺服驱动器/电机</a></li>
+                    <li class="divider" style="padding:0px;margin:0px;"></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="../../use/stepper/index.htm"><span class="colorgray2">❺</span> 步进驱动器/电机</a></li>
+                    <li class="divider" style="padding:0px;margin:0px;"></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="../../use/vdf/index.htm"><span class="colorgray2">❻</span> 变频器</a></li>
+                    <li class="divider" style="padding:0px;margin:0px;"></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="../../use/smartfactory/index.htm"><span class="colorgray2">❼</span> 智慧工厂</a></li>
+                    <li class="divider" style="padding:0px;margin:0px;"></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="../../use/other/index.htm"><span class="colorgray2">❽</span> 其它</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-sm-home-1 col-md-home-1 col-lg-home-1 col-xs-6 empty" style="border-left:10px solid #ffffff;border-right:10px solid #ffffff;">
+            <div class="download-head text-center dropdown ">
+                <a href="#" id="linkcad" class="activewhite colorgray dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+                    <h3 class="download-head-text"><i class="icon-download icon-large activewhite colorgray"></i> CAD/3D图纸</h3>
+                </a>
+                <ul class="dropdown-menu popover bottom" role="menu" aria-labelledby="linkcad" style="width:100%;margin-top:0px;">
+                    <li class="arrow"></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="../../cad/all/index.htm"><span class="colorgray2">❶</span> 全部</a></li>
+                    <li class="divider" style="padding:0px;margin:0px;"></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="../../cad/hmi/index.htm"><span class="colorgray2">❷</span> 人机界面</a></li>
+                    <li class="divider" style="padding:0px;margin:0px;"></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="../../cad/plc/index.htm"><span class="colorgray2">❸</span> PLC</a></li>
+                    <li class="divider" style="padding:0px;margin:0px;"></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="../../cad/servo/index.htm"><span class="colorgray2">❹</span> 伺服驱动器/电机</a></li>
+                    <li class="divider" style="padding:0px;margin:0px;"></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="../../cad/stepper/index.htm"><span class="colorgray2">❺</span> 步进驱动器/电机</a></li>
+                    <li class="divider" style="padding:0px;margin:0px;"></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="../../cad/vdf/index.htm"><span class="colorgray2">❻</span> 变频器</a></li>
+                    <li class="divider" style="padding:0px;margin:0px;"></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="../../cad/smartfactory/index.htm"><span class="colorgray2">❼</span> 智慧工厂</a></li>
+                    <li class="divider" style="padding:0px;margin:0px;"></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="../../cad/other/index.htm"><span class="colorgray2">❽</span> 其它</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-sm-home-1 col-md-home-1 col-lg-home-1 col-xs-6 empty" style="border-left:10px solid #ffffff;">
+            <div class="download-head text-center dropdown ">
+                <a href="#" id="linkqualification" class="activewhite colorgray dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+                    <h3 class="download-head-text"><i class="icon-download icon-large activewhite colorgray"></i> 资质认证</h3>
+                </a>
+                <ul class="dropdown-menu popover bottom" role="menu" aria-labelledby="linkqualification" style="width:100%;margin-top:0px;">
+                    <li class="arrow"></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="../../accredit/all/index.htm"><span class="colorgray2">❶</span> 全部</a></li>
+                    <li class="divider" style="padding:0px;margin:0px;"></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="../../accredit/hmi/index.htm"><span class="colorgray2">❷</span> 人机界面</a></li>
+                    <li class="divider" style="padding:0px;margin:0px;"></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="../../accredit/plc/index.htm"><span class="colorgray2">❸</span> PLC</a></li>
+                    <li class="divider" style="padding:0px;margin:0px;"></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="../../accredit/servo/index.htm"><span class="colorgray2">❹</span> 伺服驱动器/电机</a></li>
+                    <li class="divider" style="padding:0px;margin:0px;"></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="../../accredit/stepper/index.htm"><span class="colorgray2">❺</span> 步进驱动器/电机</a></li>
+                    <li class="divider" style="padding:0px;margin:0px;"></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="../../accredit/vdf/index.htm"><span class="colorgray2">❻</span> 变频器</a></li>
+                    <li class="divider" style="padding:0px;margin:0px;"></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="../../accredit/smartfactory/index.htm"><span class="colorgray2">❼</span> 智慧工厂</a></li>
+                    <li class="divider" style="padding:0px;margin:0px;"></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="../../accredit/other/index.htm"><span class="colorgray2">❽</span> 其它</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row empty" style="border-bottom:2px dotted #dcdcdc;">
+        <div class="col-md-12">
+            &nbsp;
+        </div>
+    </div>
+    <div class="row empty">
+        <div class="col-md-3 empty">
+            <h3 class="colorred"><strong>软件</strong><small> > 全部</small></h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            &nbsp;
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 col-xs-12">
+            <div class="table-responsive">
+                <table class="table table-striped table-hover" style="table-layout:fixed;">
+                    <thead>
+                        <tr class="table-head-th2">
+                            <th style="width:100px">名称</th>
+                            <th></th>
+                            <th style="width:50%;" class="download-table-border">描述</th>
+                            <th style="width:10%;" class="download-table-border text-center">文件格式</th>
+                            <th style="width:10%" class="text-center">点击下载</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="download-table-body" style="vertical-align:middle;width:100px;"><img src="../../../uploads/datadownload/52e0ca7d067169b5599cca2f11e131c3.png" style="height:60px" alt="图片信息" /></td>
+                            <td class="" style="vertical-align:middle;"><i class=" icon-angle-right icon-large colorred"></i>Kinco_CoDeSys V3.5</td>
+                            <td class="download-table-body" style="vertical-align:middle;">
+                                <a href="../../../productById_0DC7A13C" class="colorblack link-hyfa">EKC88M</a>
+                            </td>
+                            <td class="download-table-body text-center" style="vertical-align:middle;">RAR</td>
+                            <td class="download-table-body text-center" style="vertical-align:middle;">
+                                <a href="../../../../download.kinco.cn/D_Software/PLC/KincoSoftware_PLC_CoDeSys_v35.rar" style="font-size:24px;" class="colorgray activered" target="_blank">
+                                    <strong><span class="glyphicon glyphicon-download" aria-hidden="true"></span></strong>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="download-table-body" style="vertical-align:middle;width:100px;"><img src="../../../uploads/datadownload/f0ec45b7cefc659dc11ea4f2de22f888.jpg" style="height:60px" alt="图片信息" /></td>
+                            <td class="" style="vertical-align:middle;"><i class=" icon-angle-right icon-large colorred"></i>Kinco PLC编程软件KincoBuilder V3.0.0.0</td>
+                            <td class="download-table-body" style="vertical-align:middle;">
+                                <a href="../../../productById_0BE7DD3E" class="colorblack link-hyfa">K541</a>
+                                <a href="../../../productById_7C3AE8CD" class="colorblack link-hyfa">K533-04IV</a>
+                                <a href="../../../productById_653FF83B" class="colorblack link-hyfa">K532-02IV</a>
+                                <a href="../../../productById_33CD81C7" class="colorblack link-hyfa">K531-04TC</a>
+                                <a href="../../../productById_2AC8B235" class="colorblack link-hyfa">K531-04RD</a>
+                                <a href="../../../productById_A1CFE0DB" class="colorblack link-hyfa">K531-04IV</a>
+                                <a href="../../../productById_CCD6D151" class="colorblack link-hyfa">K523-16DT</a>
+                                <br />
+                                <a href="../../../productById_3AB345AE" class="colorblack link-hyfa">K523-08DT</a>
+                                <a href="../../../productById_23B4763C" class="colorblack link-hyfa">K523-16DR</a>
+                                <a href="../../../productById_9CAD24D2" class="colorblack link-hyfa">K523-08DR</a>
+                                <a href="../../../productById_D1AA1568" class="colorblack link-hyfa">K522-16DT</a>
+                                <a href="../../../productById_412509D9" class="colorblack link-hyfa">K522-08DT</a>
+                                <a href="../../../productById_2C223A63" class="colorblack link-hyfa">K522-16XR</a>
+                                <a href="../../../productById_827E057A" class="colorblack link-hyfa">K522-08XR</a>
+                                <a href="../../../productById_AD76D504" class="colorblack link-hyfa">K521-16DX</a>
+                                <a href="../../../productById_2470249E" class="colorblack link-hyfa">K521-08DX</a>
+                                <a href="../../../productById_1B753430" class="colorblack link-hyfa">K508-40DR</a>
+                                <a href="../../../productById_7D11C993" class="colorblack link-hyfa">K508-40DT</a>
+                                <a href="../../../productById_B21498FD" class="colorblack link-hyfa">K508-40AR</a>
+                                <a href="../../../productById_2B1B68A7" class="colorblack link-hyfa">K508-40AX</a>
+                                <a href="../../../productById_141A7819" class="colorblack link-hyfa">K508-40AT</a>
+                                <a href="../../../productById_84C38DA8" class="colorblack link-hyfa">K506EA-30DT</a>
+                                <a href="../../../productById_BBC25D16" class="colorblack link-hyfa">K506EA-30AT</a>
+                                <a href="../../../productById_F77608E5" class="colorblack link-hyfa">K506-24DR</a>
+                                <a href="../../../productById_8A7CF84F" class="colorblack link-hyfa">K506-24DT</a>
+                                <a href="../../../productById_2173A7F9" class="colorblack link-hyfa">K506-24AR</a>
+                                <a href="../../../productById_706ED76B" class="colorblack link-hyfa">K506-24AT</a>
+                                <a href="../../../productById_FA1344CC" class="colorblack link-hyfa">K504EX-14DR</a>
+                                <a href="../../../productById_87103456" class="colorblack link-hyfa">K504EX-14DT</a>
+                                <a href="../../../productById_201963F0" class="colorblack link-hyfa">K504EX-14AR</a>
+                                <a href="../../../productById_711A9382" class="colorblack link-hyfa">K504EX-14AT</a>
+                                <a href="../../../productById_01C190F3" class="colorblack link-hyfa">K504-14DR</a>
+                                <a href="../../../productById_90C28081" class="colorblack link-hyfa">K504-14DT</a>
+                                <a href="../../../productById_DD797130" class="colorblack link-hyfa">K504-14AR</a>
+                                <a href="../../../productById_B080A1BA" class="colorblack link-hyfa">K504-14AT</a>
+                            </td>
+                            <td class="download-table-body text-center" style="vertical-align:middle;">RAR</td>
+                            <td class="download-table-body text-center" style="vertical-align:middle;">
+                                <a href="../../../../download.kinco.cn/D_Software/PLC/KincoBuilder_V3.0.0.0_build0016setup.rar" style="font-size:24px;" class="colorgray activered" target="_blank">
+                                    <strong><span class="glyphicon glyphicon-download" aria-hidden="true"></span></strong>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="download-table-body" style="vertical-align:middle;width:100px;"><img src="../../../uploads/datadownload/c94c62d2c84f12d5940691aeab22e101.jpg" style="height:60px" alt="图片信息" /></td>
+                            <td class="" style="vertical-align:middle;"><i class=" icon-angle-right icon-large colorred"></i>K系列PLC应用之定时器和计数器的使用</td>
+                            <td class="download-table-body" style="vertical-align:middle;">
+                                <a href="../../../productById_0BE7DD3E" class="colorblack link-hyfa">K541</a>
+                                <a href="../../../productById_7C3AE8CD" class="colorblack link-hyfa">K533-04IV</a>
+                                <a href="../../../productById_653FF83B" class="colorblack link-hyfa">K532-02IV</a>
+                                <a href="../../../productById_33CD81C7" class="colorblack link-hyfa">K531-04TC</a>
+                                <a href="../../../productById_2AC8B235" class="colorblack link-hyfa">K531-04RD</a>
+                                <a href="../../../productById_A1CFE0DB" class="colorblack link-hyfa">K531-04IV</a>
+                                <a href="../../../productById_CCD6D151" class="colorblack link-hyfa">K523-16DT</a>
+                                <br />
+                                <a href="../../../productById_3AB345AE" class="colorblack link-hyfa">K523-08DT</a>
+                                <a href="../../../productById_23B4763C" class="colorblack link-hyfa">K523-16DR</a>
+                                <a href="../../../productById_9CAD24D2" class="colorblack link-hyfa">K523-08DR</a>
+                                <a href="../../../productById_D1AA1568" class="colorblack link-hyfa">K522-16DT</a>
+                                <a href="../../../productById_412509D9" class="colorblack link-hyfa">K522-08DT</a>
+                                <a href="../../../productById_2C223A63" class="colorblack link-hyfa">K522-16XR</a>
+                                <a href="../../../productById_827E057A" class="colorblack link-hyfa">K522-08XR</a>
+                                <a href="../../../productById_AD76D504" class="colorblack link-hyfa">K521-16DX</a>
+                                <a href="../../../productById_2470249E" class="colorblack link-hyfa">K521-08DX</a>
+                                <a href="../../../productById_1B753430" class="colorblack link-hyfa">K508-40DR</a>
+                                <a href="../../../productById_7D11C993" class="colorblack link-hyfa">K508-40DT</a>
+                                <a href="../../../productById_B21498FD" class="colorblack link-hyfa">K508-40AR</a>
+                                <a href="../../../productById_2B1B68A7" class="colorblack link-hyfa">K508-40AX</a>
+                                <a href="../../../productById_141A7819" class="colorblack link-hyfa">K508-40AT</a>
+                                <a href="../../../productById_84C38DA8" class="colorblack link-hyfa">K506EA-30DT</a>
+                                <a href="../../../productById_BBC25D16" class="colorblack link-hyfa">K506EA-30AT</a>
+                                <a href="../../../productById_F77608E5" class="colorblack link-hyfa">K506-24DR</a>
+                                <a href="../../../productById_8A7CF84F" class="colorblack link-hyfa">K506-24DT</a>
+                                <a href="../../../productById_2173A7F9" class="colorblack link-hyfa">K506-24AR</a>
+                                <a href="../../../productById_706ED76B" class="colorblack link-hyfa">K506-24AT</a>
+                                <a href="../../../productById_FA1344CC" class="colorblack link-hyfa">K504EX-14DR</a>
+                                <a href="../../../productById_87103456" class="colorblack link-hyfa">K504EX-14DT</a>
+                                <a href="../../../productById_201963F0" class="colorblack link-hyfa">K504EX-14AR</a>
+                                <a href="../../../productById_711A9382" class="colorblack link-hyfa">K504EX-14AT</a>
+                                <a href="../../../productById_01C190F3" class="colorblack link-hyfa">K504-14DR</a>
+                                <a href="../../../productById_90C28081" class="colorblack link-hyfa">K504-14DT</a>
+                                <a href="../../../productById_DD797130" class="colorblack link-hyfa">K504-14AR</a>
+                                <a href="../../../productById_B080A1BA" class="colorblack link-hyfa">K504-14AT</a>
+                                <a href="../../../productById_47DDFECD" class="colorblack link-hyfa">Kinco_K205_16DT</a>
+                                <a href="../../../productById_D744F95E" class="colorblack link-hyfa">Kinco_K205_16DR</a>
+                                <a href="../../../productById_A64629CC" class="colorblack link-hyfa">Kinco_K205EX_22DT</a>
+                                <a href="../../../productById_DFBD4218" class="colorblack link-hyfa">Kinco_K205EA_18DT</a>
+                            </td>
+                            <td class="download-table-body text-center" style="vertical-align:middle;">RAR</td>
+                            <td class="download-table-body text-center" style="vertical-align:middle;">
+                                <a href="../../../../download.kinco.cn/D_Software/PLC/定时器和计数器的应用.rar" style="font-size:24px;" class="colorgray activered" target="_blank">
+                                    <strong><span class="glyphicon glyphicon-download" aria-hidden="true"></span></strong>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="download-table-body" style="vertical-align:middle;width:100px;"><img src="../../../uploads/datadownload/69fdd57c9a6bcf7656ee183c532ddcc7.jpg" style="height:60px" alt="图片信息" /></td>
+                            <td class="" style="vertical-align:middle;"><i class=" icon-angle-right icon-large colorred"></i>K系列PLC应用之如何规范写好一个程序示范</td>
+                            <td class="download-table-body" style="vertical-align:middle;">
+                                <a href="../../../productById_0BE7DD3E" class="colorblack link-hyfa">K541</a>
+                                <a href="../../../productById_7C3AE8CD" class="colorblack link-hyfa">K533-04IV</a>
+                                <a href="../../../productById_653FF83B" class="colorblack link-hyfa">K532-02IV</a>
+                                <a href="../../../productById_33CD81C7" class="colorblack link-hyfa">K531-04TC</a>
+                                <a href="../../../productById_2AC8B235" class="colorblack link-hyfa">K531-04RD</a>
+                                <a href="../../../productById_A1CFE0DB" class="colorblack link-hyfa">K531-04IV</a>
+                                <a href="../../../productById_CCD6D151" class="colorblack link-hyfa">K523-16DT</a>
+                                <br />
+                                <a href="../../../productById_3AB345AE" class="colorblack link-hyfa">K523-08DT</a>
+                                <a href="../../../productById_23B4763C" class="colorblack link-hyfa">K523-16DR</a>
+                                <a href="../../../productById_9CAD24D2" class="colorblack link-hyfa">K523-08DR</a>
+                                <a href="../../../productById_D1AA1568" class="colorblack link-hyfa">K522-16DT</a>
+                                <a href="../../../productById_412509D9" class="colorblack link-hyfa">K522-08DT</a>
+                                <a href="../../../productById_2C223A63" class="colorblack link-hyfa">K522-16XR</a>
+                                <a href="../../../productById_827E057A" class="colorblack link-hyfa">K522-08XR</a>
+                                <a href="../../../productById_AD76D504" class="colorblack link-hyfa">K521-16DX</a>
+                                <a href="../../../productById_2470249E" class="colorblack link-hyfa">K521-08DX</a>
+                                <a href="../../../productById_1B753430" class="colorblack link-hyfa">K508-40DR</a>
+                                <a href="../../../productById_7D11C993" class="colorblack link-hyfa">K508-40DT</a>
+                                <a href="../../../productById_B21498FD" class="colorblack link-hyfa">K508-40AR</a>
+                                <a href="../../../productById_2B1B68A7" class="colorblack link-hyfa">K508-40AX</a>
+                                <a href="../../../productById_141A7819" class="colorblack link-hyfa">K508-40AT</a>
+                                <a href="../../../productById_84C38DA8" class="colorblack link-hyfa">K506EA-30DT</a>
+                                <a href="../../../productById_BBC25D16" class="colorblack link-hyfa">K506EA-30AT</a>
+                                <a href="../../../productById_F77608E5" class="colorblack link-hyfa">K506-24DR</a>
+                                <a href="../../../productById_8A7CF84F" class="colorblack link-hyfa">K506-24DT</a>
+                                <a href="../../../productById_2173A7F9" class="colorblack link-hyfa">K506-24AR</a>
+                                <a href="../../../productById_706ED76B" class="colorblack link-hyfa">K506-24AT</a>
+                                <a href="../../../productById_FA1344CC" class="colorblack link-hyfa">K504EX-14DR</a>
+                                <a href="../../../productById_87103456" class="colorblack link-hyfa">K504EX-14DT</a>
+                                <a href="../../../productById_201963F0" class="colorblack link-hyfa">K504EX-14AR</a>
+                                <a href="../../../productById_711A9382" class="colorblack link-hyfa">K504EX-14AT</a>
+                                <a href="../../../productById_01C190F3" class="colorblack link-hyfa">K504-14DR</a>
+                                <a href="../../../productById_90C28081" class="colorblack link-hyfa">K504-14DT</a>
+                                <a href="../../../productById_DD797130" class="colorblack link-hyfa">K504-14AR</a>
+                                <a href="../../../productById_B080A1BA" class="colorblack link-hyfa">K504-14AT</a>
+                                <a href="../../../productById_47DDFECD" class="colorblack link-hyfa">Kinco_K205_16DT</a>
+                                <a href="../../../productById_D744F95E" class="colorblack link-hyfa">Kinco_K205_16DR</a>
+                                <a href="../../../productById_A64629CC" class="colorblack link-hyfa">Kinco_K205EX_22DT</a>
+                                <a href="../../../productById_DFBD4218" class="colorblack link-hyfa">Kinco_K205EA_18DT</a>
+                            </td>
+                            <td class="download-table-body text-center" style="vertical-align:middle;">ZIP</td>
+                            <td class="download-table-body text-center" style="vertical-align:middle;">
+                                <a href="../../../../download.kinco.cn/D_Software/PLC/一个简单的示范工程.zip" style="font-size:24px;" class="colorgray activered" target="_blank">
+                                    <strong><span class="glyphicon glyphicon-download" aria-hidden="true"></span></strong>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="download-table-body" style="vertical-align:middle;width:100px;"><img src="../../../uploads/datadownload/674e81c18168941fce7c58784cfef734.jpg" style="height:60px" alt="图片信息" /></td>
+                            <td class="" style="vertical-align:middle;"><i class=" icon-angle-right icon-large colorred"></i>K系列PLC应用之数据备份和保持的使用</td>
+                            <td class="download-table-body" style="vertical-align:middle;">
+                                <a href="../../../productById_0BE7DD3E" class="colorblack link-hyfa">K541</a>
+                                <a href="../../../productById_7C3AE8CD" class="colorblack link-hyfa">K533-04IV</a>
+                                <a href="../../../productById_653FF83B" class="colorblack link-hyfa">K532-02IV</a>
+                                <a href="../../../productById_33CD81C7" class="colorblack link-hyfa">K531-04TC</a>
+                                <a href="../../../productById_2AC8B235" class="colorblack link-hyfa">K531-04RD</a>
+                                <a href="../../../productById_A1CFE0DB" class="colorblack link-hyfa">K531-04IV</a>
+                                <a href="../../../productById_CCD6D151" class="colorblack link-hyfa">K523-16DT</a>
+                                <br />
+                                <a href="../../../productById_3AB345AE" class="colorblack link-hyfa">K523-08DT</a>
+                                <a href="../../../productById_23B4763C" class="colorblack link-hyfa">K523-16DR</a>
+                                <a href="../../../productById_9CAD24D2" class="colorblack link-hyfa">K523-08DR</a>
+                                <a href="../../../productById_D1AA1568" class="colorblack link-hyfa">K522-16DT</a>
+                                <a href="../../../productById_412509D9" class="colorblack link-hyfa">K522-08DT</a>
+                                <a href="../../../productById_2C223A63" class="colorblack link-hyfa">K522-16XR</a>
+                                <a href="../../../productById_827E057A" class="colorblack link-hyfa">K522-08XR</a>
+                                <a href="../../../productById_AD76D504" class="colorblack link-hyfa">K521-16DX</a>
+                                <a href="../../../productById_2470249E" class="colorblack link-hyfa">K521-08DX</a>
+                                <a href="../../../productById_1B753430" class="colorblack link-hyfa">K508-40DR</a>
+                                <a href="../../../productById_7D11C993" class="colorblack link-hyfa">K508-40DT</a>
+                                <a href="../../../productById_B21498FD" class="colorblack link-hyfa">K508-40AR</a>
+                                <a href="../../../productById_2B1B68A7" class="colorblack link-hyfa">K508-40AX</a>
+                                <a href="../../../productById_141A7819" class="colorblack link-hyfa">K508-40AT</a>
+                                <a href="../../../productById_84C38DA8" class="colorblack link-hyfa">K506EA-30DT</a>
+                                <a href="../../../productById_BBC25D16" class="colorblack link-hyfa">K506EA-30AT</a>
+                                <a href="../../../productById_F77608E5" class="colorblack link-hyfa">K506-24DR</a>
+                                <a href="../../../productById_8A7CF84F" class="colorblack link-hyfa">K506-24DT</a>
+                                <a href="../../../productById_2173A7F9" class="colorblack link-hyfa">K506-24AR</a>
+                                <a href="../../../productById_706ED76B" class="colorblack link-hyfa">K506-24AT</a>
+                                <a href="../../../productById_FA1344CC" class="colorblack link-hyfa">K504EX-14DR</a>
+                                <a href="../../../productById_87103456" class="colorblack link-hyfa">K504EX-14DT</a>
+                                <a href="../../../productById_201963F0" class="colorblack link-hyfa">K504EX-14AR</a>
+                                <a href="../../../productById_711A9382" class="colorblack link-hyfa">K504EX-14AT</a>
+                                <a href="../../../productById_01C190F3" class="colorblack link-hyfa">K504-14DR</a>
+                                <a href="../../../productById_90C28081" class="colorblack link-hyfa">K504-14DT</a>
+                                <a href="../../../productById_DD797130" class="colorblack link-hyfa">K504-14AR</a>
+                                <a href="../../../productById_B080A1BA" class="colorblack link-hyfa">K504-14AT</a>
+                                <a href="../../../productById_47DDFECD" class="colorblack link-hyfa">Kinco_K205_16DT</a>
+                                <a href="../../../productById_D744F95E" class="colorblack link-hyfa">Kinco_K205_16DR</a>
+                                <a href="../../../productById_A64629CC" class="colorblack link-hyfa">Kinco_K205EX_22DT</a>
+                                <a href="../../../productById_DFBD4218" class="colorblack link-hyfa">Kinco_K205EA_18DT</a>
+                            </td>
+                            <td class="download-table-body text-center" style="vertical-align:middle;">RAR</td>
+                            <td class="download-table-body text-center" style="vertical-align:middle;">
+                                <a href="../../../../download.kinco.cn/D_Software/PLC/数据备份和保持的使用.rar" style="font-size:24px;" class="colorgray activered" target="_blank">
+                                    <strong><span class="glyphicon glyphicon-download" aria-hidden="true"></span></strong>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="download-table-body" style="vertical-align:middle;width:100px;"><img src="../../../uploads/datadownload/0a22e862852b2744a5e53b7cdfbbd52d.jpg" style="height:60px" alt="图片信息" /></td>
+                            <td class="" style="vertical-align:middle;"><i class=" icon-angle-right icon-large colorred"></i>K系列PLC应用之实时时钟</td>
+                            <td class="download-table-body" style="vertical-align:middle;">
+                                <a href="../../../productById_0BE7DD3E" class="colorblack link-hyfa">K541</a>
+                                <a href="../../../productById_7C3AE8CD" class="colorblack link-hyfa">K533-04IV</a>
+                                <a href="../../../productById_653FF83B" class="colorblack link-hyfa">K532-02IV</a>
+                                <a href="../../../productById_33CD81C7" class="colorblack link-hyfa">K531-04TC</a>
+                                <a href="../../../productById_2AC8B235" class="colorblack link-hyfa">K531-04RD</a>
+                                <a href="../../../productById_A1CFE0DB" class="colorblack link-hyfa">K531-04IV</a>
+                                <a href="../../../productById_CCD6D151" class="colorblack link-hyfa">K523-16DT</a>
+                                <br />
+                                <a href="../../../productById_3AB345AE" class="colorblack link-hyfa">K523-08DT</a>
+                                <a href="../../../productById_23B4763C" class="colorblack link-hyfa">K523-16DR</a>
+                                <a href="../../../productById_9CAD24D2" class="colorblack link-hyfa">K523-08DR</a>
+                                <a href="../../../productById_D1AA1568" class="colorblack link-hyfa">K522-16DT</a>
+                                <a href="../../../productById_412509D9" class="colorblack link-hyfa">K522-08DT</a>
+                                <a href="../../../productById_2C223A63" class="colorblack link-hyfa">K522-16XR</a>
+                                <a href="../../../productById_827E057A" class="colorblack link-hyfa">K522-08XR</a>
+                                <a href="../../../productById_AD76D504" class="colorblack link-hyfa">K521-16DX</a>
+                                <a href="../../../productById_2470249E" class="colorblack link-hyfa">K521-08DX</a>
+                                <a href="../../../productById_1B753430" class="colorblack link-hyfa">K508-40DR</a>
+                                <a href="../../../productById_7D11C993" class="colorblack link-hyfa">K508-40DT</a>
+                                <a href="../../../productById_B21498FD" class="colorblack link-hyfa">K508-40AR</a>
+                                <a href="../../../productById_2B1B68A7" class="colorblack link-hyfa">K508-40AX</a>
+                                <a href="../../../productById_141A7819" class="colorblack link-hyfa">K508-40AT</a>
+                                <a href="../../../productById_84C38DA8" class="colorblack link-hyfa">K506EA-30DT</a>
+                                <a href="../../../productById_BBC25D16" class="colorblack link-hyfa">K506EA-30AT</a>
+                                <a href="../../../productById_F77608E5" class="colorblack link-hyfa">K506-24DR</a>
+                                <a href="../../../productById_8A7CF84F" class="colorblack link-hyfa">K506-24DT</a>
+                                <a href="../../../productById_2173A7F9" class="colorblack link-hyfa">K506-24AR</a>
+                                <a href="../../../productById_706ED76B" class="colorblack link-hyfa">K506-24AT</a>
+                                <a href="../../../productById_FA1344CC" class="colorblack link-hyfa">K504EX-14DR</a>
+                                <a href="../../../productById_87103456" class="colorblack link-hyfa">K504EX-14DT</a>
+                                <a href="../../../productById_201963F0" class="colorblack link-hyfa">K504EX-14AR</a>
+                                <a href="../../../productById_711A9382" class="colorblack link-hyfa">K504EX-14AT</a>
+                                <a href="../../../productById_01C190F3" class="colorblack link-hyfa">K504-14DR</a>
+                                <a href="../../../productById_90C28081" class="colorblack link-hyfa">K504-14DT</a>
+                                <a href="../../../productById_DD797130" class="colorblack link-hyfa">K504-14AR</a>
+                                <a href="../../../productById_B080A1BA" class="colorblack link-hyfa">K504-14AT</a>
+                                <a href="../../../productById_47DDFECD" class="colorblack link-hyfa">Kinco_K205_16DT</a>
+                                <a href="../../../productById_D744F95E" class="colorblack link-hyfa">Kinco_K205_16DR</a>
+                                <a href="../../../productById_A64629CC" class="colorblack link-hyfa">Kinco_K205EX_22DT</a>
+                                <a href="../../../productById_DFBD4218" class="colorblack link-hyfa">Kinco_K205EA_18DT</a>
+                            </td>
+                            <td class="download-table-body text-center" style="vertical-align:middle;">RAR</td>
+                            <td class="download-table-body text-center" style="vertical-align:middle;">
+                                <a href="../../../../download.kinco.cn/D_Software/PLC/实时时钟的使用.rar" style="font-size:24px;" class="colorgray activered" target="_blank">
+                                    <strong><span class="glyphicon glyphicon-download" aria-hidden="true"></span></strong>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="download-table-body" style="vertical-align:middle;width:100px;"><img src="../../../uploads/datadownload/c83ea200dc0ec1ebd484982fe3e51306.jpg" style="height:60px" alt="图片信息" /></td>
+                            <td class="" style="vertical-align:middle;"><i class=" icon-angle-right icon-large colorred"></i>K系列PLC应用之模拟量的应用</td>
+                            <td class="download-table-body" style="vertical-align:middle;">
+                                <a href="../../../productById_0BE7DD3E" class="colorblack link-hyfa">K541</a>
+                                <a href="../../../productById_7C3AE8CD" class="colorblack link-hyfa">K533-04IV</a>
+                                <a href="../../../productById_653FF83B" class="colorblack link-hyfa">K532-02IV</a>
+                                <a href="../../../productById_33CD81C7" class="colorblack link-hyfa">K531-04TC</a>
+                                <a href="../../../productById_2AC8B235" class="colorblack link-hyfa">K531-04RD</a>
+                                <a href="../../../productById_A1CFE0DB" class="colorblack link-hyfa">K531-04IV</a>
+                                <a href="../../../productById_CCD6D151" class="colorblack link-hyfa">K523-16DT</a>
+                                <br />
+                                <a href="../../../productById_3AB345AE" class="colorblack link-hyfa">K523-08DT</a>
+                                <a href="../../../productById_23B4763C" class="colorblack link-hyfa">K523-16DR</a>
+                                <a href="../../../productById_9CAD24D2" class="colorblack link-hyfa">K523-08DR</a>
+                                <a href="../../../productById_D1AA1568" class="colorblack link-hyfa">K522-16DT</a>
+                                <a href="../../../productById_412509D9" class="colorblack link-hyfa">K522-08DT</a>
+                                <a href="../../../productById_2C223A63" class="colorblack link-hyfa">K522-16XR</a>
+                                <a href="../../../productById_827E057A" class="colorblack link-hyfa">K522-08XR</a>
+                                <a href="../../../productById_AD76D504" class="colorblack link-hyfa">K521-16DX</a>
+                                <a href="../../../productById_2470249E" class="colorblack link-hyfa">K521-08DX</a>
+                                <a href="../../../productById_1B753430" class="colorblack link-hyfa">K508-40DR</a>
+                                <a href="../../../productById_7D11C993" class="colorblack link-hyfa">K508-40DT</a>
+                                <a href="../../../productById_B21498FD" class="colorblack link-hyfa">K508-40AR</a>
+                                <a href="../../../productById_2B1B68A7" class="colorblack link-hyfa">K508-40AX</a>
+                                <a href="../../../productById_141A7819" class="colorblack link-hyfa">K508-40AT</a>
+                                <a href="../../../productById_84C38DA8" class="colorblack link-hyfa">K506EA-30DT</a>
+                                <a href="../../../productById_BBC25D16" class="colorblack link-hyfa">K506EA-30AT</a>
+                                <a href="../../../productById_F77608E5" class="colorblack link-hyfa">K506-24DR</a>
+                                <a href="../../../productById_8A7CF84F" class="colorblack link-hyfa">K506-24DT</a>
+                                <a href="../../../productById_2173A7F9" class="colorblack link-hyfa">K506-24AR</a>
+                                <a href="../../../productById_706ED76B" class="colorblack link-hyfa">K506-24AT</a>
+                                <a href="../../../productById_FA1344CC" class="colorblack link-hyfa">K504EX-14DR</a>
+                                <a href="../../../productById_87103456" class="colorblack link-hyfa">K504EX-14DT</a>
+                                <a href="../../../productById_201963F0" class="colorblack link-hyfa">K504EX-14AR</a>
+                                <a href="../../../productById_711A9382" class="colorblack link-hyfa">K504EX-14AT</a>
+                                <a href="../../../productById_01C190F3" class="colorblack link-hyfa">K504-14DR</a>
+                                <a href="../../../productById_90C28081" class="colorblack link-hyfa">K504-14DT</a>
+                                <a href="../../../productById_DD797130" class="colorblack link-hyfa">K504-14AR</a>
+                                <a href="../../../productById_B080A1BA" class="colorblack link-hyfa">K504-14AT</a>
+                                <a href="../../../productById_47DDFECD" class="colorblack link-hyfa">Kinco_K205_16DT</a>
+                                <a href="../../../productById_D744F95E" class="colorblack link-hyfa">Kinco_K205_16DR</a>
+                                <a href="../../../productById_A64629CC" class="colorblack link-hyfa">Kinco_K205EX_22DT</a>
+                                <a href="../../../productById_DFBD4218" class="colorblack link-hyfa">Kinco_K205EA_18DT</a>
+                            </td>
+                            <td class="download-table-body text-center" style="vertical-align:middle;">RAR</td>
+                            <td class="download-table-body text-center" style="vertical-align:middle;">
+                                <a href="../../../../download.kinco.cn/D_Software/PLC/模拟量的使用.rar" style="font-size:24px;" class="colorgray activered" target="_blank">
+                                    <strong><span class="glyphicon glyphicon-download" aria-hidden="true"></span></strong>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="download-table-body" style="vertical-align:middle;width:100px;"><img src="../../../uploads/datadownload/278ae10e37433239ad9fc41f2901645a.jpg" style="height:60px" alt="图片信息" /></td>
+                            <td class="" style="vertical-align:middle;"><i class=" icon-angle-right icon-large colorred"></i>K系列PLC应用之简单IO逻辑电路</td>
+                            <td class="download-table-body" style="vertical-align:middle;">
+                                <a href="../../../productById_0BE7DD3E" class="colorblack link-hyfa">K541</a>
+                                <a href="../../../productById_7C3AE8CD" class="colorblack link-hyfa">K533-04IV</a>
+                                <a href="../../../productById_653FF83B" class="colorblack link-hyfa">K532-02IV</a>
+                                <a href="../../../productById_33CD81C7" class="colorblack link-hyfa">K531-04TC</a>
+                                <a href="../../../productById_2AC8B235" class="colorblack link-hyfa">K531-04RD</a>
+                                <a href="../../../productById_A1CFE0DB" class="colorblack link-hyfa">K531-04IV</a>
+                                <a href="../../../productById_CCD6D151" class="colorblack link-hyfa">K523-16DT</a>
+                                <br />
+                                <a href="../../../productById_3AB345AE" class="colorblack link-hyfa">K523-08DT</a>
+                                <a href="../../../productById_23B4763C" class="colorblack link-hyfa">K523-16DR</a>
+                                <a href="../../../productById_9CAD24D2" class="colorblack link-hyfa">K523-08DR</a>
+                                <a href="../../../productById_D1AA1568" class="colorblack link-hyfa">K522-16DT</a>
+                                <a href="../../../productById_412509D9" class="colorblack link-hyfa">K522-08DT</a>
+                                <a href="../../../productById_2C223A63" class="colorblack link-hyfa">K522-16XR</a>
+                                <a href="../../../productById_827E057A" class="colorblack link-hyfa">K522-08XR</a>
+                                <a href="../../../productById_AD76D504" class="colorblack link-hyfa">K521-16DX</a>
+                                <a href="../../../productById_2470249E" class="colorblack link-hyfa">K521-08DX</a>
+                                <a href="../../../productById_1B753430" class="colorblack link-hyfa">K508-40DR</a>
+                                <a href="../../../productById_7D11C993" class="colorblack link-hyfa">K508-40DT</a>
+                                <a href="../../../productById_B21498FD" class="colorblack link-hyfa">K508-40AR</a>
+                                <a href="../../../productById_2B1B68A7" class="colorblack link-hyfa">K508-40AX</a>
+                                <a href="../../../productById_141A7819" class="colorblack link-hyfa">K508-40AT</a>
+                                <a href="../../../productById_84C38DA8" class="colorblack link-hyfa">K506EA-30DT</a>
+                                <a href="../../../productById_BBC25D16" class="colorblack link-hyfa">K506EA-30AT</a>
+                                <a href="../../../productById_F77608E5" class="colorblack link-hyfa">K506-24DR</a>
+                                <a href="../../../productById_8A7CF84F" class="colorblack link-hyfa">K506-24DT</a>
+                                <a href="../../../productById_2173A7F9" class="colorblack link-hyfa">K506-24AR</a>
+                                <a href="../../../productById_706ED76B" class="colorblack link-hyfa">K506-24AT</a>
+                                <a href="../../../productById_FA1344CC" class="colorblack link-hyfa">K504EX-14DR</a>
+                                <a href="../../../productById_87103456" class="colorblack link-hyfa">K504EX-14DT</a>
+                                <a href="../../../productById_201963F0" class="colorblack link-hyfa">K504EX-14AR</a>
+                                <a href="../../../productById_711A9382" class="colorblack link-hyfa">K504EX-14AT</a>
+                                <a href="../../../productById_01C190F3" class="colorblack link-hyfa">K504-14DR</a>
+                                <a href="../../../productById_90C28081" class="colorblack link-hyfa">K504-14DT</a>
+                                <a href="../../../productById_DD797130" class="colorblack link-hyfa">K504-14AR</a>
+                                <a href="../../../productById_B080A1BA" class="colorblack link-hyfa">K504-14AT</a>
+                                <a href="../../../productById_47DDFECD" class="colorblack link-hyfa">Kinco_K205_16DT</a>
+                                <a href="../../../productById_D744F95E" class="colorblack link-hyfa">Kinco_K205_16DR</a>
+                                <a href="../../../productById_A64629CC" class="colorblack link-hyfa">Kinco_K205EX_22DT</a>
+                                <a href="../../../productById_DFBD4218" class="colorblack link-hyfa">Kinco_K205EA_18DT</a>
+                            </td>
+                            <td class="download-table-body text-center" style="vertical-align:middle;">RAR</td>
+                            <td class="download-table-body text-center" style="vertical-align:middle;">
+                                <a href="../../../../download.kinco.cn/D_Software/PLC/简单IO逻辑电路.rar" style="font-size:24px;" class="colorgray activered" target="_blank">
+                                    <strong><span class="glyphicon glyphicon-download" aria-hidden="true"></span></strong>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="download-table-body" style="vertical-align:middle;width:100px;"><img src="../../../uploads/datadownload/f8e2e96b034f7d904b89645852bbf010.jpg" style="height:60px" alt="图片信息" /></td>
+                            <td class="" style="vertical-align:middle;"><i class=" icon-angle-right icon-large colorred"></i>K系列PLC应用之间接寻址（指针）的使用</td>
+                            <td class="download-table-body" style="vertical-align:middle;">
+                                <a href="../../../productById_0BE7DD3E" class="colorblack link-hyfa">K541</a>
+                                <a href="../../../productById_7C3AE8CD" class="colorblack link-hyfa">K533-04IV</a>
+                                <a href="../../../productById_653FF83B" class="colorblack link-hyfa">K532-02IV</a>
+                                <a href="../../../productById_33CD81C7" class="colorblack link-hyfa">K531-04TC</a>
+                                <a href="../../../productById_2AC8B235" class="colorblack link-hyfa">K531-04RD</a>
+                                <a href="../../../productById_A1CFE0DB" class="colorblack link-hyfa">K531-04IV</a>
+                                <a href="../../../productById_CCD6D151" class="colorblack link-hyfa">K523-16DT</a>
+                                <br />
+                                <a href="../../../productById_3AB345AE" class="colorblack link-hyfa">K523-08DT</a>
+                                <a href="../../../productById_23B4763C" class="colorblack link-hyfa">K523-16DR</a>
+                                <a href="../../../productById_9CAD24D2" class="colorblack link-hyfa">K523-08DR</a>
+                                <a href="../../../productById_D1AA1568" class="colorblack link-hyfa">K522-16DT</a>
+                                <a href="../../../productById_412509D9" class="colorblack link-hyfa">K522-08DT</a>
+                                <a href="../../../productById_2C223A63" class="colorblack link-hyfa">K522-16XR</a>
+                                <a href="../../../productById_827E057A" class="colorblack link-hyfa">K522-08XR</a>
+                                <a href="../../../productById_AD76D504" class="colorblack link-hyfa">K521-16DX</a>
+                                <a href="../../../productById_2470249E" class="colorblack link-hyfa">K521-08DX</a>
+                                <a href="../../../productById_1B753430" class="colorblack link-hyfa">K508-40DR</a>
+                                <a href="../../../productById_7D11C993" class="colorblack link-hyfa">K508-40DT</a>
+                                <a href="../../../productById_B21498FD" class="colorblack link-hyfa">K508-40AR</a>
+                                <a href="../../../productById_2B1B68A7" class="colorblack link-hyfa">K508-40AX</a>
+                                <a href="../../../productById_141A7819" class="colorblack link-hyfa">K508-40AT</a>
+                                <a href="../../../productById_84C38DA8" class="colorblack link-hyfa">K506EA-30DT</a>
+                                <a href="../../../productById_BBC25D16" class="colorblack link-hyfa">K506EA-30AT</a>
+                                <a href="../../../productById_F77608E5" class="colorblack link-hyfa">K506-24DR</a>
+                                <a href="../../../productById_8A7CF84F" class="colorblack link-hyfa">K506-24DT</a>
+                                <a href="../../../productById_2173A7F9" class="colorblack link-hyfa">K506-24AR</a>
+                                <a href="../../../productById_706ED76B" class="colorblack link-hyfa">K506-24AT</a>
+                                <a href="../../../productById_FA1344CC" class="colorblack link-hyfa">K504EX-14DR</a>
+                                <a href="../../../productById_87103456" class="colorblack link-hyfa">K504EX-14DT</a>
+                                <a href="../../../productById_201963F0" class="colorblack link-hyfa">K504EX-14AR</a>
+                                <a href="../../../productById_711A9382" class="colorblack link-hyfa">K504EX-14AT</a>
+                                <a href="../../../productById_01C190F3" class="colorblack link-hyfa">K504-14DR</a>
+                                <a href="../../../productById_90C28081" class="colorblack link-hyfa">K504-14DT</a>
+                                <a href="../../../productById_DD797130" class="colorblack link-hyfa">K504-14AR</a>
+                                <a href="../../../productById_B080A1BA" class="colorblack link-hyfa">K504-14AT</a>
+                                <a href="../../../productById_47DDFECD" class="colorblack link-hyfa">Kinco_K205_16DT</a>
+                                <a href="../../../productById_D744F95E" class="colorblack link-hyfa">Kinco_K205_16DR</a>
+                                <a href="../../../productById_A64629CC" class="colorblack link-hyfa">Kinco_K205EX_22DT</a>
+                                <a href="../../../productById_DFBD4218" class="colorblack link-hyfa">Kinco_K205EA_18DT</a>
+                            </td>
+                            <td class="download-table-body text-center" style="vertical-align:middle;">RAR</td>
+                            <td class="download-table-body text-center" style="vertical-align:middle;">
+                                <a href="../../../../download.kinco.cn/D_Software/PLC/间接寻址（指针）的使用.rar" style="font-size:24px;" class="colorgray activered" target="_blank">
+                                    <strong><span class="glyphicon glyphicon-download" aria-hidden="true"></span></strong>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="download-table-body" style="vertical-align:middle;width:100px;"><img src="../../../uploads/datadownload/76713f79b1c593d0e6326006fc3b9001.jpg" style="height:60px" alt="图片信息" /></td>
+                            <td class="" style="vertical-align:middle;"><i class=" icon-angle-right icon-large colorred"></i>K系列PLC应用之加密解密程序保护</td>
+                            <td class="download-table-body" style="vertical-align:middle;">
+                                <a href="../../../productById_0BE7DD3E" class="colorblack link-hyfa">K541</a>
+                                <a href="../../../productById_7C3AE8CD" class="colorblack link-hyfa">K533-04IV</a>
+                                <a href="../../../productById_653FF83B" class="colorblack link-hyfa">K532-02IV</a>
+                                <a href="../../../productById_33CD81C7" class="colorblack link-hyfa">K531-04TC</a>
+                                <a href="../../../productById_2AC8B235" class="colorblack link-hyfa">K531-04RD</a>
+                                <a href="../../../productById_A1CFE0DB" class="colorblack link-hyfa">K531-04IV</a>
+                                <a href="../../../productById_CCD6D151" class="colorblack link-hyfa">K523-16DT</a>
+                                <br />
+                                <a href="../../../productById_3AB345AE" class="colorblack link-hyfa">K523-08DT</a>
+                                <a href="../../../productById_23B4763C" class="colorblack link-hyfa">K523-16DR</a>
+                                <a href="../../../productById_9CAD24D2" class="colorblack link-hyfa">K523-08DR</a>
+                                <a href="../../../productById_D1AA1568" class="colorblack link-hyfa">K522-16DT</a>
+                                <a href="../../../productById_412509D9" class="colorblack link-hyfa">K522-08DT</a>
+                                <a href="../../../productById_2C223A63" class="colorblack link-hyfa">K522-16XR</a>
+                                <a href="../../../productById_827E057A" class="colorblack link-hyfa">K522-08XR</a>
+                                <a href="../../../productById_AD76D504" class="colorblack link-hyfa">K521-16DX</a>
+                                <a href="../../../productById_2470249E" class="colorblack link-hyfa">K521-08DX</a>
+                                <a href="../../../productById_1B753430" class="colorblack link-hyfa">K508-40DR</a>
+                                <a href="../../../productById_7D11C993" class="colorblack link-hyfa">K508-40DT</a>
+                                <a href="../../../productById_B21498FD" class="colorblack link-hyfa">K508-40AR</a>
+                                <a href="../../../productById_2B1B68A7" class="colorblack link-hyfa">K508-40AX</a>
+                                <a href="../../../productById_141A7819" class="colorblack link-hyfa">K508-40AT</a>
+                                <a href="../../../productById_84C38DA8" class="colorblack link-hyfa">K506EA-30DT</a>
+                                <a href="../../../productById_BBC25D16" class="colorblack link-hyfa">K506EA-30AT</a>
+                                <a href="../../../productById_F77608E5" class="colorblack link-hyfa">K506-24DR</a>
+                                <a href="../../../productById_8A7CF84F" class="colorblack link-hyfa">K506-24DT</a>
+                                <a href="../../../productById_2173A7F9" class="colorblack link-hyfa">K506-24AR</a>
+                                <a href="../../../productById_706ED76B" class="colorblack link-hyfa">K506-24AT</a>
+                                <a href="../../../productById_FA1344CC" class="colorblack link-hyfa">K504EX-14DR</a>
+                                <a href="../../../productById_87103456" class="colorblack link-hyfa">K504EX-14DT</a>
+                                <a href="../../../productById_201963F0" class="colorblack link-hyfa">K504EX-14AR</a>
+                                <a href="../../../productById_711A9382" class="colorblack link-hyfa">K504EX-14AT</a>
+                                <a href="../../../productById_01C190F3" class="colorblack link-hyfa">K504-14DR</a>
+                                <a href="../../../productById_90C28081" class="colorblack link-hyfa">K504-14DT</a>
+                                <a href="../../../productById_DD797130" class="colorblack link-hyfa">K504-14AR</a>
+                                <a href="../../../productById_B080A1BA" class="colorblack link-hyfa">K504-14AT</a>
+                                <a href="../../../productById_47DDFECD" class="colorblack link-hyfa">Kinco_K205_16DT</a>
+                                <a href="../../../productById_D744F95E" class="colorblack link-hyfa">Kinco_K205_16DR</a>
+                                <a href="../../../productById_A64629CC" class="colorblack link-hyfa">Kinco_K205EX_22DT</a>
+                                <a href="../../../productById_DFBD4218" class="colorblack link-hyfa">Kinco_K205EA_18DT</a>
+                            </td>
+                            <td class="download-table-body text-center" style="vertical-align:middle;">RAR</td>
+                            <td class="download-table-body text-center" style="vertical-align:middle;">
+                                <a href="../../../../download.kinco.cn/D_Software/PLC/加密解密程序保护的应用.rar" style="font-size:24px;" class="colorgray activered" target="_blank">
+                                    <strong><span class="glyphicon glyphicon-download" aria-hidden="true"></span></strong>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="download-table-body" style="vertical-align:middle;width:100px;"><img src="../../../uploads/datadownload/7121cc5ff34009559ac032cdc5f8e72d.jpg" style="height:60px" alt="图片信息" /></td>
+                            <td class="" style="vertical-align:middle;"><i class=" icon-angle-right icon-large colorred"></i>K系列PLC应用之基本指令的应用</td>
+                            <td class="download-table-body" style="vertical-align:middle;">
+                                <a href="../../../productById_0BE7DD3E" class="colorblack link-hyfa">K541</a>
+                                <a href="../../../productById_7C3AE8CD" class="colorblack link-hyfa">K533-04IV</a>
+                                <a href="../../../productById_653FF83B" class="colorblack link-hyfa">K532-02IV</a>
+                                <a href="../../../productById_33CD81C7" class="colorblack link-hyfa">K531-04TC</a>
+                                <a href="../../../productById_2AC8B235" class="colorblack link-hyfa">K531-04RD</a>
+                                <a href="../../../productById_A1CFE0DB" class="colorblack link-hyfa">K531-04IV</a>
+                                <a href="../../../productById_CCD6D151" class="colorblack link-hyfa">K523-16DT</a>
+                                <br />
+                                <a href="../../../productById_3AB345AE" class="colorblack link-hyfa">K523-08DT</a>
+                                <a href="../../../productById_23B4763C" class="colorblack link-hyfa">K523-16DR</a>
+                                <a href="../../../productById_9CAD24D2" class="colorblack link-hyfa">K523-08DR</a>
+                                <a href="../../../productById_D1AA1568" class="colorblack link-hyfa">K522-16DT</a>
+                                <a href="../../../productById_412509D9" class="colorblack link-hyfa">K522-08DT</a>
+                                <a href="../../../productById_2C223A63" class="colorblack link-hyfa">K522-16XR</a>
+                                <a href="../../../productById_827E057A" class="colorblack link-hyfa">K522-08XR</a>
+                                <a href="../../../productById_AD76D504" class="colorblack link-hyfa">K521-16DX</a>
+                                <a href="../../../productById_2470249E" class="colorblack link-hyfa">K521-08DX</a>
+                                <a href="../../../productById_1B753430" class="colorblack link-hyfa">K508-40DR</a>
+                                <a href="../../../productById_7D11C993" class="colorblack link-hyfa">K508-40DT</a>
+                                <a href="../../../productById_B21498FD" class="colorblack link-hyfa">K508-40AR</a>
+                                <a href="../../../productById_2B1B68A7" class="colorblack link-hyfa">K508-40AX</a>
+                                <a href="../../../productById_141A7819" class="colorblack link-hyfa">K508-40AT</a>
+                                <a href="../../../productById_84C38DA8" class="colorblack link-hyfa">K506EA-30DT</a>
+                                <a href="../../../productById_BBC25D16" class="colorblack link-hyfa">K506EA-30AT</a>
+                                <a href="../../../productById_F77608E5" class="colorblack link-hyfa">K506-24DR</a>
+                                <a href="../../../productById_8A7CF84F" class="colorblack link-hyfa">K506-24DT</a>
+                                <a href="../../../productById_2173A7F9" class="colorblack link-hyfa">K506-24AR</a>
+                                <a href="../../../productById_706ED76B" class="colorblack link-hyfa">K506-24AT</a>
+                                <a href="../../../productById_FA1344CC" class="colorblack link-hyfa">K504EX-14DR</a>
+                                <a href="../../../productById_87103456" class="colorblack link-hyfa">K504EX-14DT</a>
+                                <a href="../../../productById_201963F0" class="colorblack link-hyfa">K504EX-14AR</a>
+                                <a href="../../../productById_711A9382" class="colorblack link-hyfa">K504EX-14AT</a>
+                                <a href="../../../productById_01C190F3" class="colorblack link-hyfa">K504-14DR</a>
+                                <a href="../../../productById_90C28081" class="colorblack link-hyfa">K504-14DT</a>
+                                <a href="../../../productById_DD797130" class="colorblack link-hyfa">K504-14AR</a>
+                                <a href="../../../productById_B080A1BA" class="colorblack link-hyfa">K504-14AT</a>
+                                <a href="../../../productById_47DDFECD" class="colorblack link-hyfa">Kinco_K205_16DT</a>
+                                <a href="../../../productById_D744F95E" class="colorblack link-hyfa">Kinco_K205_16DR</a>
+                                <a href="../../../productById_A64629CC" class="colorblack link-hyfa">Kinco_K205EX_22DT</a>
+                                <a href="../../../productById_DFBD4218" class="colorblack link-hyfa">Kinco_K205EA_18DT</a>
+                            </td>
+                            <td class="download-table-body text-center" style="vertical-align:middle;">RAR</td>
+                            <td class="download-table-body text-center" style="vertical-align:middle;">
+                                <a href="../../../../download.kinco.cn/D_Software/PLC/基本指令的应用.rar" style="font-size:24px;" class="colorgray activered" target="_blank">
+                                    <strong><span class="glyphicon glyphicon-download" aria-hidden="true"></span></strong>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="download-table-body" style="vertical-align:middle;width:100px;"><img src="../../../uploads/datadownload/48b0a607b5fa7622ba165b37a72ed327.jpg" style="height:60px" alt="图片信息" /></td>
+                            <td class="" style="vertical-align:middle;"><i class=" icon-angle-right icon-large colorred"></i>K系列PLC应用之高速计数器的应用</td>
+                            <td class="download-table-body" style="vertical-align:middle;">
+                                <a href="../../../productById_0BE7DD3E" class="colorblack link-hyfa">K541</a>
+                                <a href="../../../productById_7C3AE8CD" class="colorblack link-hyfa">K533-04IV</a>
+                                <a href="../../../productById_653FF83B" class="colorblack link-hyfa">K532-02IV</a>
+                                <a href="../../../productById_33CD81C7" class="colorblack link-hyfa">K531-04TC</a>
+                                <a href="../../../productById_2AC8B235" class="colorblack link-hyfa">K531-04RD</a>
+                                <a href="../../../productById_A1CFE0DB" class="colorblack link-hyfa">K531-04IV</a>
+                                <a href="../../../productById_CCD6D151" class="colorblack link-hyfa">K523-16DT</a>
+                                <br />
+                                <a href="../../../productById_3AB345AE" class="colorblack link-hyfa">K523-08DT</a>
+                                <a href="../../../productById_23B4763C" class="colorblack link-hyfa">K523-16DR</a>
+                                <a href="../../../productById_9CAD24D2" class="colorblack link-hyfa">K523-08DR</a>
+                                <a href="../../../productById_D1AA1568" class="colorblack link-hyfa">K522-16DT</a>
+                                <a href="../../../productById_412509D9" class="colorblack link-hyfa">K522-08DT</a>
+                                <a href="../../../productById_2C223A63" class="colorblack link-hyfa">K522-16XR</a>
+                                <a href="../../../productById_827E057A" class="colorblack link-hyfa">K522-08XR</a>
+                                <a href="../../../productById_AD76D504" class="colorblack link-hyfa">K521-16DX</a>
+                                <a href="../../../productById_2470249E" class="colorblack link-hyfa">K521-08DX</a>
+                                <a href="../../../productById_1B753430" class="colorblack link-hyfa">K508-40DR</a>
+                                <a href="../../../productById_7D11C993" class="colorblack link-hyfa">K508-40DT</a>
+                                <a href="../../../productById_B21498FD" class="colorblack link-hyfa">K508-40AR</a>
+                                <a href="../../../productById_2B1B68A7" class="colorblack link-hyfa">K508-40AX</a>
+                                <a href="../../../productById_141A7819" class="colorblack link-hyfa">K508-40AT</a>
+                                <a href="../../../productById_84C38DA8" class="colorblack link-hyfa">K506EA-30DT</a>
+                                <a href="../../../productById_BBC25D16" class="colorblack link-hyfa">K506EA-30AT</a>
+                                <a href="../../../productById_F77608E5" class="colorblack link-hyfa">K506-24DR</a>
+                                <a href="../../../productById_8A7CF84F" class="colorblack link-hyfa">K506-24DT</a>
+                                <a href="../../../productById_2173A7F9" class="colorblack link-hyfa">K506-24AR</a>
+                                <a href="../../../productById_706ED76B" class="colorblack link-hyfa">K506-24AT</a>
+                                <a href="../../../productById_FA1344CC" class="colorblack link-hyfa">K504EX-14DR</a>
+                                <a href="../../../productById_87103456" class="colorblack link-hyfa">K504EX-14DT</a>
+                                <a href="../../../productById_201963F0" class="colorblack link-hyfa">K504EX-14AR</a>
+                                <a href="../../../productById_711A9382" class="colorblack link-hyfa">K504EX-14AT</a>
+                                <a href="../../../productById_01C190F3" class="colorblack link-hyfa">K504-14DR</a>
+                                <a href="../../../productById_90C28081" class="colorblack link-hyfa">K504-14DT</a>
+                                <a href="../../../productById_DD797130" class="colorblack link-hyfa">K504-14AR</a>
+                                <a href="../../../productById_B080A1BA" class="colorblack link-hyfa">K504-14AT</a>
+                                <a href="../../../productById_47DDFECD" class="colorblack link-hyfa">Kinco_K205_16DT</a>
+                                <a href="../../../productById_D744F95E" class="colorblack link-hyfa">Kinco_K205_16DR</a>
+                                <a href="../../../productById_A64629CC" class="colorblack link-hyfa">Kinco_K205EX_22DT</a>
+                                <a href="../../../productById_DFBD4218" class="colorblack link-hyfa">Kinco_K205EA_18DT</a>
+                            </td>
+                            <td class="download-table-body text-center" style="vertical-align:middle;">RAR</td>
+                            <td class="download-table-body text-center" style="vertical-align:middle;">
+                                <a href="../../../../download.kinco.cn/D_Software/PLC/高速计数器的应用.rar" style="font-size:24px;" class="colorgray activered" target="_blank">
+                                    <strong><span class="glyphicon glyphicon-download" aria-hidden="true"></span></strong>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="download-table-body" style="vertical-align:middle;width:100px;"><img src="../../../uploads/datadownload/c848b096f92eded7e2a630815cc06098.jpg" style="height:60px" alt="图片信息" /></td>
+                            <td class="" style="vertical-align:middle;"><i class=" icon-angle-right icon-large colorred"></i>K系列PLC应用之定位控制的应用</td>
+                            <td class="download-table-body" style="vertical-align:middle;">
+                                <a href="../../../productById_0BE7DD3E" class="colorblack link-hyfa">K541</a>
+                                <a href="../../../productById_7C3AE8CD" class="colorblack link-hyfa">K533-04IV</a>
+                                <a href="../../../productById_653FF83B" class="colorblack link-hyfa">K532-02IV</a>
+                                <a href="../../../productById_33CD81C7" class="colorblack link-hyfa">K531-04TC</a>
+                                <a href="../../../productById_2AC8B235" class="colorblack link-hyfa">K531-04RD</a>
+                                <a href="../../../productById_A1CFE0DB" class="colorblack link-hyfa">K531-04IV</a>
+                                <a href="../../../productById_CCD6D151" class="colorblack link-hyfa">K523-16DT</a>
+                                <br />
+                                <a href="../../../productById_3AB345AE" class="colorblack link-hyfa">K523-08DT</a>
+                                <a href="../../../productById_23B4763C" class="colorblack link-hyfa">K523-16DR</a>
+                                <a href="../../../productById_9CAD24D2" class="colorblack link-hyfa">K523-08DR</a>
+                                <a href="../../../productById_D1AA1568" class="colorblack link-hyfa">K522-16DT</a>
+                                <a href="../../../productById_412509D9" class="colorblack link-hyfa">K522-08DT</a>
+                                <a href="../../../productById_2C223A63" class="colorblack link-hyfa">K522-16XR</a>
+                                <a href="../../../productById_827E057A" class="colorblack link-hyfa">K522-08XR</a>
+                                <a href="../../../productById_AD76D504" class="colorblack link-hyfa">K521-16DX</a>
+                                <a href="../../../productById_2470249E" class="colorblack link-hyfa">K521-08DX</a>
+                                <a href="../../../productById_1B753430" class="colorblack link-hyfa">K508-40DR</a>
+                                <a href="../../../productById_7D11C993" class="colorblack link-hyfa">K508-40DT</a>
+                                <a href="../../../productById_B21498FD" class="colorblack link-hyfa">K508-40AR</a>
+                                <a href="../../../productById_2B1B68A7" class="colorblack link-hyfa">K508-40AX</a>
+                                <a href="../../../productById_141A7819" class="colorblack link-hyfa">K508-40AT</a>
+                                <a href="../../../productById_84C38DA8" class="colorblack link-hyfa">K506EA-30DT</a>
+                                <a href="../../../productById_BBC25D16" class="colorblack link-hyfa">K506EA-30AT</a>
+                                <a href="../../../productById_F77608E5" class="colorblack link-hyfa">K506-24DR</a>
+                                <a href="../../../productById_8A7CF84F" class="colorblack link-hyfa">K506-24DT</a>
+                                <a href="../../../productById_2173A7F9" class="colorblack link-hyfa">K506-24AR</a>
+                                <a href="../../../productById_706ED76B" class="colorblack link-hyfa">K506-24AT</a>
+                                <a href="../../../productById_FA1344CC" class="colorblack link-hyfa">K504EX-14DR</a>
+                                <a href="../../../productById_87103456" class="colorblack link-hyfa">K504EX-14DT</a>
+                                <a href="../../../productById_201963F0" class="colorblack link-hyfa">K504EX-14AR</a>
+                                <a href="../../../productById_711A9382" class="colorblack link-hyfa">K504EX-14AT</a>
+                                <a href="../../../productById_01C190F3" class="colorblack link-hyfa">K504-14DR</a>
+                                <a href="../../../productById_90C28081" class="colorblack link-hyfa">K504-14DT</a>
+                                <a href="../../../productById_DD797130" class="colorblack link-hyfa">K504-14AR</a>
+                                <a href="../../../productById_B080A1BA" class="colorblack link-hyfa">K504-14AT</a>
+                                <a href="../../../productById_47DDFECD" class="colorblack link-hyfa">Kinco_K205_16DT</a>
+                                <a href="../../../productById_D744F95E" class="colorblack link-hyfa">Kinco_K205_16DR</a>
+                                <a href="../../../productById_A64629CC" class="colorblack link-hyfa">Kinco_K205EX_22DT</a>
+                                <a href="../../../productById_DFBD4218" class="colorblack link-hyfa">Kinco_K205EA_18DT</a>
+                            </td>
+                            <td class="download-table-body text-center" style="vertical-align:middle;">RAR</td>
+                            <td class="download-table-body text-center" style="vertical-align:middle;">
+                                <a href="../../../../download.kinco.cn/D_Software/PLC/定位控制的使用.rar" style="font-size:24px;" class="colorgray activered" target="_blank">
+                                    <strong><span class="glyphicon glyphicon-download" aria-hidden="true"></span></strong>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="download-table-body" style="vertical-align:middle;width:100px;"><img src="../../../uploads/datadownload/27c4578e259ca62b976f9a8bf09faafd.jpg" style="height:60px" alt="图片信息" /></td>
+                            <td class="" style="vertical-align:middle;"><i class=" icon-angle-right icon-large colorred"></i>K系列PLC应用之错误处理的应用</td>
+                            <td class="download-table-body" style="vertical-align:middle;">
+                                <a href="../../../productById_0BE7DD3E" class="colorblack link-hyfa">K541</a>
+                                <a href="../../../productById_7C3AE8CD" class="colorblack link-hyfa">K533-04IV</a>
+                                <a href="../../../productById_653FF83B" class="colorblack link-hyfa">K532-02IV</a>
+                                <a href="../../../productById_33CD81C7" class="colorblack link-hyfa">K531-04TC</a>
+                                <a href="../../../productById_2AC8B235" class="colorblack link-hyfa">K531-04RD</a>
+                                <a href="../../../productById_A1CFE0DB" class="colorblack link-hyfa">K531-04IV</a>
+                                <a href="../../../productById_CCD6D151" class="colorblack link-hyfa">K523-16DT</a>
+                                <br />
+                                <a href="../../../productById_3AB345AE" class="colorblack link-hyfa">K523-08DT</a>
+                                <a href="../../../productById_23B4763C" class="colorblack link-hyfa">K523-16DR</a>
+                                <a href="../../../productById_9CAD24D2" class="colorblack link-hyfa">K523-08DR</a>
+                                <a href="../../../productById_D1AA1568" class="colorblack link-hyfa">K522-16DT</a>
+                                <a href="../../../productById_412509D9" class="colorblack link-hyfa">K522-08DT</a>
+                                <a href="../../../productById_2C223A63" class="colorblack link-hyfa">K522-16XR</a>
+                                <a href="../../../productById_827E057A" class="colorblack link-hyfa">K522-08XR</a>
+                                <a href="../../../productById_AD76D504" class="colorblack link-hyfa">K521-16DX</a>
+                                <a href="../../../productById_2470249E" class="colorblack link-hyfa">K521-08DX</a>
+                                <a href="../../../productById_1B753430" class="colorblack link-hyfa">K508-40DR</a>
+                                <a href="../../../productById_7D11C993" class="colorblack link-hyfa">K508-40DT</a>
+                                <a href="../../../productById_B21498FD" class="colorblack link-hyfa">K508-40AR</a>
+                                <a href="../../../productById_2B1B68A7" class="colorblack link-hyfa">K508-40AX</a>
+                                <a href="../../../productById_141A7819" class="colorblack link-hyfa">K508-40AT</a>
+                                <a href="../../../productById_84C38DA8" class="colorblack link-hyfa">K506EA-30DT</a>
+                                <a href="../../../productById_BBC25D16" class="colorblack link-hyfa">K506EA-30AT</a>
+                                <a href="../../../productById_F77608E5" class="colorblack link-hyfa">K506-24DR</a>
+                                <a href="../../../productById_8A7CF84F" class="colorblack link-hyfa">K506-24DT</a>
+                                <a href="../../../productById_2173A7F9" class="colorblack link-hyfa">K506-24AR</a>
+                                <a href="../../../productById_706ED76B" class="colorblack link-hyfa">K506-24AT</a>
+                                <a href="../../../productById_FA1344CC" class="colorblack link-hyfa">K504EX-14DR</a>
+                                <a href="../../../productById_87103456" class="colorblack link-hyfa">K504EX-14DT</a>
+                                <a href="../../../productById_201963F0" class="colorblack link-hyfa">K504EX-14AR</a>
+                                <a href="../../../productById_711A9382" class="colorblack link-hyfa">K504EX-14AT</a>
+                                <a href="../../../productById_01C190F3" class="colorblack link-hyfa">K504-14DR</a>
+                                <a href="../../../productById_90C28081" class="colorblack link-hyfa">K504-14DT</a>
+                                <a href="../../../productById_DD797130" class="colorblack link-hyfa">K504-14AR</a>
+                                <a href="../../../productById_B080A1BA" class="colorblack link-hyfa">K504-14AT</a>
+                                <a href="../../../productById_47DDFECD" class="colorblack link-hyfa">Kinco_K205_16DT</a>
+                                <a href="../../../productById_D744F95E" class="colorblack link-hyfa">Kinco_K205_16DR</a>
+                                <a href="../../../productById_A64629CC" class="colorblack link-hyfa">Kinco_K205EX_22DT</a>
+                                <a href="../../../productById_DFBD4218" class="colorblack link-hyfa">Kinco_K205EA_18DT</a>
+                            </td>
+                            <td class="download-table-body text-center" style="vertical-align:middle;">RAR</td>
+                            <td class="download-table-body text-center" style="vertical-align:middle;">
+                                <a href="../../../../download.kinco.cn/D_Software/PLC/错误处理的应用.rar" style="font-size:24px;" class="colorgray activered" target="_blank">
+                                    <strong><span class="glyphicon glyphicon-download" aria-hidden="true"></span></strong>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="download-table-body" style="vertical-align:middle;width:100px;"><img src="../../../uploads/datadownload/fce6438ab3a8f3ad23276a645c5b3fca.jpg" style="height:60px" alt="图片信息" /></td>
+                            <td class="" style="vertical-align:middle;"><i class=" icon-angle-right icon-large colorred"></i>K系列PLC应用之串口通讯的应用</td>
+                            <td class="download-table-body" style="vertical-align:middle;">
+                                <a href="../../../productById_0BE7DD3E" class="colorblack link-hyfa">K541</a>
+                                <a href="../../../productById_7C3AE8CD" class="colorblack link-hyfa">K533-04IV</a>
+                                <a href="../../../productById_653FF83B" class="colorblack link-hyfa">K532-02IV</a>
+                                <a href="../../../productById_33CD81C7" class="colorblack link-hyfa">K531-04TC</a>
+                                <a href="../../../productById_2AC8B235" class="colorblack link-hyfa">K531-04RD</a>
+                                <a href="../../../productById_A1CFE0DB" class="colorblack link-hyfa">K531-04IV</a>
+                                <a href="../../../productById_CCD6D151" class="colorblack link-hyfa">K523-16DT</a>
+                                <br />
+                                <a href="../../../productById_3AB345AE" class="colorblack link-hyfa">K523-08DT</a>
+                                <a href="../../../productById_23B4763C" class="colorblack link-hyfa">K523-16DR</a>
+                                <a href="../../../productById_9CAD24D2" class="colorblack link-hyfa">K523-08DR</a>
+                                <a href="../../../productById_D1AA1568" class="colorblack link-hyfa">K522-16DT</a>
+                                <a href="../../../productById_412509D9" class="colorblack link-hyfa">K522-08DT</a>
+                                <a href="../../../productById_2C223A63" class="colorblack link-hyfa">K522-16XR</a>
+                                <a href="../../../productById_827E057A" class="colorblack link-hyfa">K522-08XR</a>
+                                <a href="../../../productById_AD76D504" class="colorblack link-hyfa">K521-16DX</a>
+                                <a href="../../../productById_2470249E" class="colorblack link-hyfa">K521-08DX</a>
+                                <a href="../../../productById_1B753430" class="colorblack link-hyfa">K508-40DR</a>
+                                <a href="../../../productById_7D11C993" class="colorblack link-hyfa">K508-40DT</a>
+                                <a href="../../../productById_B21498FD" class="colorblack link-hyfa">K508-40AR</a>
+                                <a href="../../../productById_2B1B68A7" class="colorblack link-hyfa">K508-40AX</a>
+                                <a href="../../../productById_141A7819" class="colorblack link-hyfa">K508-40AT</a>
+                                <a href="../../../productById_84C38DA8" class="colorblack link-hyfa">K506EA-30DT</a>
+                                <a href="../../../productById_BBC25D16" class="colorblack link-hyfa">K506EA-30AT</a>
+                                <a href="../../../productById_F77608E5" class="colorblack link-hyfa">K506-24DR</a>
+                                <a href="../../../productById_8A7CF84F" class="colorblack link-hyfa">K506-24DT</a>
+                                <a href="../../../productById_2173A7F9" class="colorblack link-hyfa">K506-24AR</a>
+                                <a href="../../../productById_706ED76B" class="colorblack link-hyfa">K506-24AT</a>
+                                <a href="../../../productById_FA1344CC" class="colorblack link-hyfa">K504EX-14DR</a>
+                                <a href="../../../productById_87103456" class="colorblack link-hyfa">K504EX-14DT</a>
+                                <a href="../../../productById_201963F0" class="colorblack link-hyfa">K504EX-14AR</a>
+                                <a href="../../../productById_711A9382" class="colorblack link-hyfa">K504EX-14AT</a>
+                                <a href="../../../productById_01C190F3" class="colorblack link-hyfa">K504-14DR</a>
+                                <a href="../../../productById_90C28081" class="colorblack link-hyfa">K504-14DT</a>
+                                <a href="../../../productById_DD797130" class="colorblack link-hyfa">K504-14AR</a>
+                                <a href="../../../productById_B080A1BA" class="colorblack link-hyfa">K504-14AT</a>
+                                <a href="../../../productById_47DDFECD" class="colorblack link-hyfa">Kinco_K205_16DT</a>
+                                <a href="../../../productById_D744F95E" class="colorblack link-hyfa">Kinco_K205_16DR</a>
+                                <a href="../../../productById_A64629CC" class="colorblack link-hyfa">Kinco_K205EX_22DT</a>
+                                <a href="../../../productById_DFBD4218" class="colorblack link-hyfa">Kinco_K205EA_18DT</a>
+                            </td>
+                            <td class="download-table-body text-center" style="vertical-align:middle;">RAR</td>
+                            <td class="download-table-body text-center" style="vertical-align:middle;">
+                                <a href="../../../../download.kinco.cn/D_Software/PLC/串口通讯%20的应用.rar" style="font-size:24px;" class="colorgray activered" target="_blank">
+                                    <strong><span class="glyphicon glyphicon-download" aria-hidden="true"></span></strong>
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 col-xs-12 text-right">
+            <ul class="pagination"><li class="disabled"><span>&laquo;</span></li> <li class="active"><span>1</span></li><li><a href="query_41878854">2</a></li><li><a href="query_8A8058C2">3</a></li><li><a href="query_2823E521">4</a></li><li><a href="query_B322F5B7">5</a></li><li><a href="query_3A2A444D">6</a></li> <li><a href="query_41878854" rel="next">&raquo;</a></li></ul>
+        </div>
+    </div>
+</div>
