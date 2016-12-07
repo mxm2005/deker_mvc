@@ -536,6 +536,10 @@
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Business\Business.csproj">
+      <Project>{f40c9efd-f1ae-40c3-ae76-65af170caa6c}</Project>
+      <Name>Business</Name>
+    </ProjectReference>
     <ProjectReference Include="..\DBEntity\DBEntity.csproj">
       <Project>{5e47568e-2b14-452e-99b1-ed24312fae1d}</Project>
       <Name>DBEntity</Name>

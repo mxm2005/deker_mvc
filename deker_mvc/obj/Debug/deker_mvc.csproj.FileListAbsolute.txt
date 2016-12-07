@@ -96,3 +96,5 @@ D:\Myprj\deker_mvc\deker_mvc\bin\zh-Hant\System.Spatial.resources.dll
 D:\Myprj\deker_mvc\deker_mvc\obj\Debug\deker_mvc.csprojResolveAssemblyReference.cache
 D:\Myprj\deker_mvc\deker_mvc\obj\Debug\deker_mvc.dll
 D:\Myprj\deker_mvc\deker_mvc\obj\Debug\deker_mvc.pdb
+D:\Myprj\deker_mvc\deker_mvc\bin\Business.dll
+D:\Myprj\deker_mvc\deker_mvc\bin\Business.pdb

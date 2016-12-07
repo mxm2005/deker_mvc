@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using System.Data;
+using System.Configuration;
+using Business;
 
 namespace deker_mvc.Controllers
 {
@@ -10,6 +13,7 @@ namespace deker_mvc.Controllers
     {
         public ActionResult Index()
         {
+            ViewBag.RecommendProd = new RecommendProduct().GetRecommendProd();
             return View();
         }
 
@@ -17,5 +21,12 @@ namespace deker_mvc.Controllers
         {
             return View();
         }
+
+        #region support methord
+
+        
+
+        #endregion
+
     }
 }
