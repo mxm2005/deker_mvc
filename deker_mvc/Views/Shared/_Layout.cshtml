@@ -523,6 +523,18 @@
     </div>
     <!--foot ned-->
     @Scripts.Render("~/bundles/jquery")
-    @RenderSection("scripts", required: false)
+    @RenderSection("scripts", required: false)    
 </body>
 </html>
+
+<script>
+    $(function () {
+        var menuLst = $("li.col-sm-home-2");
+        var url = '@Request.Url.ToString()';
+        $.each(menuLst, function (ind,val) {
+            if (url.indexOf($(val).find("a").eq(0).attr("href")) > 0) {
+                $(val).removeClass('background-nav').addClass('background-nav-on');
+            }
+        })
+    })
+</script>

@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.Data;
 using System.Configuration;
-using Business;
+//using Business;
 
 namespace deker_mvc.Controllers
 {
@@ -13,11 +13,11 @@ namespace deker_mvc.Controllers
     {
         public ActionResult Index()
         {
-            ViewBag.RecommendProd = new RecommendProduct().GetRecommendProd();
+            //ViewBag.RecommendProd = new RecommendProduct().GetRecommendProd();
             return View();
         }
 
-        public ActionResult Contact()
+        public ActionResult Product()
         {
             return View();
         }
