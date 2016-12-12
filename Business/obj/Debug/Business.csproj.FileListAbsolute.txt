@@ -1,0 +1,12 @@
+D:\Myprj\deker_mvc\Business\bin\Debug\Business.dll
+D:\Myprj\deker_mvc\Business\bin\Debug\Business.pdb
+D:\Myprj\deker_mvc\Business\obj\Debug\Business.dll
+D:\Myprj\deker_mvc\Business\obj\Debug\Business.pdb
+D:\Myprj\deker_mvc\Business\obj\Debug\Business.csprojResolveAssemblyReference.cache
+D:\Myprj\deker_mvc\Business\bin\Debug\DBEntity.dll
+D:\Myprj\deker_mvc\Business\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\Myprj\deker_mvc\Business\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\Myprj\deker_mvc\Business\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+D:\Myprj\deker_mvc\Business\bin\Debug\DBEntity.pdb
+D:\Myprj\deker_mvc\Business\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+D:\Myprj\deker_mvc\Business\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
