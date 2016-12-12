@@ -7,3 +7,7 @@ D:\Myprj\deker_mvc\DBEntity\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Comm
 D:\Myprj\deker_mvc\DBEntity\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
 D:\Myprj\deker_mvc\DBEntity\obj\Debug\DBEntity.dll
 D:\Myprj\deker_mvc\DBEntity\obj\Debug\DBEntity.pdb
+E:\mxm\mycode\dotnet\deker_mvc\deker_mvc\DBEntity\bin\Debug\DBEntity.dll
+E:\mxm\mycode\dotnet\deker_mvc\deker_mvc\DBEntity\bin\Debug\DBEntity.pdb
+E:\mxm\mycode\dotnet\deker_mvc\deker_mvc\DBEntity\obj\Debug\DBEntity.dll
+E:\mxm\mycode\dotnet\deker_mvc\deker_mvc\DBEntity\obj\Debug\DBEntity.pdb

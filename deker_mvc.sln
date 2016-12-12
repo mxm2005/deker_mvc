@@ -1,13 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.21005.1
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "deker_mvc", "deker_mvc\deker_mvc.csproj", "{262350BA-3959-43C0-BA87-7010FB75C141}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBEntity", "DBEntity\DBEntity.csproj", "{5E47568E-2B14-452E-99B1-ED24312FAE1D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Business", "Business\Business.csproj", "{F40C9EFD-F1AE-40C3-AE76-65AF170CAA6C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProject1", "UnitTestProject1\UnitTestProject1.csproj", "{1533EB41-B8FF-46EA-91C1-2AC013718961}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{F40C9EFD-F1AE-40C3-AE76-65AF170CAA6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F40C9EFD-F1AE-40C3-AE76-65AF170CAA6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F40C9EFD-F1AE-40C3-AE76-65AF170CAA6C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1533EB41-B8FF-46EA-91C1-2AC013718961}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1533EB41-B8FF-46EA-91C1-2AC013718961}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1533EB41-B8FF-46EA-91C1-2AC013718961}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1533EB41-B8FF-46EA-91C1-2AC013718961}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
