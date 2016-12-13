@@ -33,6 +33,7 @@
     <Reference Include="System" />
     <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
     <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -46,9 +47,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\DBEntity\DBEntity.csproj">
-      <Project>{5e47568e-2b14-452e-99b1-ed24312fae1d}</Project>
-      <Name>DBEntity</Name>
+    <ProjectReference Include="..\LinqEF\LinqEF.csproj">
+      <Project>{c8a6eefb-dfee-4342-8095-7e4f43902d7e}</Project>
+      <Name>LinqEF</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

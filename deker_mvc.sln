@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Business", "Business\Busine
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProject1", "UnitTestProject1\UnitTestProject1.csproj", "{1533EB41-B8FF-46EA-91C1-2AC013718961}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqEF", "LinqEF\LinqEF.csproj", "{C8A6EEFB-DFEE-4342-8095-7E4F43902D7E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{1533EB41-B8FF-46EA-91C1-2AC013718961}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1533EB41-B8FF-46EA-91C1-2AC013718961}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1533EB41-B8FF-46EA-91C1-2AC013718961}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8A6EEFB-DFEE-4342-8095-7E4F43902D7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8A6EEFB-DFEE-4342-8095-7E4F43902D7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8A6EEFB-DFEE-4342-8095-7E4F43902D7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8A6EEFB-DFEE-4342-8095-7E4F43902D7E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

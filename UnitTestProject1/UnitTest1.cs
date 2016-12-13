@@ -1,5 +1,6 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Business;
 
 namespace UnitTestProject1
 {
@@ -15,7 +16,8 @@ namespace UnitTestProject1
         [TestMethod]
         public void TestMethod2()
         {
-            Assert.IsTrue(20 > 10);
+            var lst = RecommendProduct.Instance.GetRecommendProd();
+            Assert.IsTrue(lst != null && lst.Count > 0);
         }
     }
 }

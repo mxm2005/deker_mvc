@@ -1,0 +1,5 @@
+E:\mxm\mycode\dotnet\deker_mvc\deker_mvc\LinqEF\bin\Debug\LinqEF.dll.config
+E:\mxm\mycode\dotnet\deker_mvc\deker_mvc\LinqEF\bin\Debug\LinqEF.dll
+E:\mxm\mycode\dotnet\deker_mvc\deker_mvc\LinqEF\bin\Debug\LinqEF.pdb
+E:\mxm\mycode\dotnet\deker_mvc\deker_mvc\LinqEF\obj\Debug\LinqEF.dll
+E:\mxm\mycode\dotnet\deker_mvc\deker_mvc\LinqEF\obj\Debug\LinqEF.pdb

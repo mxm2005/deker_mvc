@@ -102,7 +102,6 @@ E:\mxm\mycode\dotnet\deker_mvc\deker_mvc\deker_mvc\bin\deker_mvc.dll.config
 E:\mxm\mycode\dotnet\deker_mvc\deker_mvc\deker_mvc\bin\deker_mvc.dll
 E:\mxm\mycode\dotnet\deker_mvc\deker_mvc\deker_mvc\bin\deker_mvc.pdb
 E:\mxm\mycode\dotnet\deker_mvc\deker_mvc\deker_mvc\bin\Antlr3.Runtime.dll
-E:\mxm\mycode\dotnet\deker_mvc\deker_mvc\deker_mvc\bin\DBEntity.dll
 E:\mxm\mycode\dotnet\deker_mvc\deker_mvc\deker_mvc\bin\EntityFramework.dll
 E:\mxm\mycode\dotnet\deker_mvc\deker_mvc\deker_mvc\bin\Microsoft.Data.Edm.dll
 E:\mxm\mycode\dotnet\deker_mvc\deker_mvc\deker_mvc\bin\Microsoft.Data.OData.dll
@@ -126,10 +125,6 @@ E:\mxm\mycode\dotnet\deker_mvc\deker_mvc\deker_mvc\bin\System.Web.WebPages.Deplo
 E:\mxm\mycode\dotnet\deker_mvc\deker_mvc\deker_mvc\bin\System.Web.WebPages.dll
 E:\mxm\mycode\dotnet\deker_mvc\deker_mvc\deker_mvc\bin\System.Web.WebPages.Razor.dll
 E:\mxm\mycode\dotnet\deker_mvc\deker_mvc\deker_mvc\bin\WebGrease.dll
-E:\mxm\mycode\dotnet\deker_mvc\deker_mvc\deker_mvc\bin\Microsoft.Practices.EnterpriseLibrary.Data.dll
-E:\mxm\mycode\dotnet\deker_mvc\deker_mvc\deker_mvc\bin\Microsoft.Practices.EnterpriseLibrary.Common.dll
-E:\mxm\mycode\dotnet\deker_mvc\deker_mvc\deker_mvc\bin\Microsoft.Practices.ObjectBuilder.dll
-E:\mxm\mycode\dotnet\deker_mvc\deker_mvc\deker_mvc\bin\DBEntity.pdb
 E:\mxm\mycode\dotnet\deker_mvc\deker_mvc\deker_mvc\bin\EntityFramework.xml
 E:\mxm\mycode\dotnet\deker_mvc\deker_mvc\deker_mvc\bin\Newtonsoft.Json.xml
 E:\mxm\mycode\dotnet\deker_mvc\deker_mvc\deker_mvc\bin\System.Net.Http.xml
@@ -194,3 +189,7 @@ E:\mxm\mycode\dotnet\deker_mvc\deker_mvc\deker_mvc\bin\zh-Hant\System.Spatial.re
 E:\mxm\mycode\dotnet\deker_mvc\deker_mvc\deker_mvc\obj\Debug\deker_mvc.csprojResolveAssemblyReference.cache
 E:\mxm\mycode\dotnet\deker_mvc\deker_mvc\deker_mvc\obj\Debug\deker_mvc.dll
 E:\mxm\mycode\dotnet\deker_mvc\deker_mvc\deker_mvc\obj\Debug\deker_mvc.pdb
+E:\mxm\mycode\dotnet\deker_mvc\deker_mvc\deker_mvc\bin\Business.dll
+E:\mxm\mycode\dotnet\deker_mvc\deker_mvc\deker_mvc\bin\LinqEF.dll
+E:\mxm\mycode\dotnet\deker_mvc\deker_mvc\deker_mvc\bin\Business.pdb
+E:\mxm\mycode\dotnet\deker_mvc\deker_mvc\deker_mvc\bin\LinqEF.pdb

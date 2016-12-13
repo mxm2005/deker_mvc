@@ -6,3 +6,7 @@ E:\mxm\mycode\dotnet\deker_mvc\deker_mvc\UnitTestProject1\bin\Debug\UnitTestProj
 E:\mxm\mycode\dotnet\deker_mvc\deker_mvc\UnitTestProject1\obj\Debug\UnitTestProject1.exe
 E:\mxm\mycode\dotnet\deker_mvc\deker_mvc\UnitTestProject1\bin\Debug\TxtOpt.dll
 E:\mxm\mycode\dotnet\deker_mvc\deker_mvc\UnitTestProject1\bin\Debug\UnitTestProject1.exe.config
+E:\mxm\mycode\dotnet\deker_mvc\deker_mvc\UnitTestProject1\bin\Debug\Business.dll
+E:\mxm\mycode\dotnet\deker_mvc\deker_mvc\UnitTestProject1\bin\Debug\LinqEF.dll
+E:\mxm\mycode\dotnet\deker_mvc\deker_mvc\UnitTestProject1\bin\Debug\Business.pdb
+E:\mxm\mycode\dotnet\deker_mvc\deker_mvc\UnitTestProject1\bin\Debug\LinqEF.pdb

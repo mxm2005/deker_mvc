@@ -20,12 +20,12 @@ namespace deker_mvc.Controllers
         public string Get(int id)
         {
             StringBuilder sb = new StringBuilder();
-           var lst= new Mxm.DAL.art_type().GetListArray("");
-           foreach (var s in lst)
-           {
-               sb.Append(s.type_id + "--" + s.type_name);
-               sb.Append("<br />");
-           }
+            var lst = Business.RecommendProduct.Instance.GetRecommendProd();
+            foreach (var s in lst)
+            {
+                sb.Append(s.id + "--" + s.title);
+                sb.Append("<br />");
+            }
             return sb.ToString();
         }
 

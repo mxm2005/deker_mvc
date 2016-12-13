@@ -67,6 +67,16 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Business\Business.csproj">
+      <Project>{f40c9efd-f1ae-40c3-ae76-65af170caa6c}</Project>
+      <Name>Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LinqEF\LinqEF.csproj">
+      <Project>{c8a6eefb-dfee-4342-8095-7e4f43902d7e}</Project>
+      <Name>LinqEF</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Data;
 using System.IO;
 using System.Linq;
@@ -15,6 +16,11 @@ namespace Business
     /// </summary>
     public static class Comm
     {
+        public static string ImgPath
+        {
+            get { return ConfigurationManager.AppSettings["imgPath"]; }
+        }
+
         /// <summary>
         /// 限制字符长度，超出的，截掉，加…
         /// </summary>
