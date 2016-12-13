@@ -59,90 +59,72 @@
             <h3 class="colorgray" style="margin-top:20px;margin-bottom:20px;">产品中心</h3>
         </div>
     </div>
-    <div class="row empty">
+    <!--ViewBag.RecommendProd-->
+    @{ var count = ViewBag.RecommendProd.Count;}
+    
+    <div class="row empty">  
         <div class="col-md-4">
-            <div class="row">
-                <div class="col-md-12 center-hmi-div">
-                    <div class="center-hmi">
-                        <a href="product/hmi/index.htm" class="thumbnailex">
-                            <div class="caption">
-                                <h3><strong>人机界面</strong></h3>
-                                <p class="colorgray">中国最具影响力的人机界面品牌</p>
+            @if (count > 2)
+            {
+                for(var i=0;i<2;i++)
+                {
+                    <div class="row">
+                        <div class="col-md-12 center-hmi-div">
+                            <div class="center-hmi">
+                                <a href="@ViewBag.RecommendProd[i].url" class="thumbnailex">
+                                    <div class="caption">
+                                        <h3><strong>@ViewBag.RecommendProd[i].title</strong></h3>
+                                        <p class="colorgray">@ViewBag.RecommendProd[i].content</p>
+                                    </div>
+                                    <img src="@(Business.Comm.ImgPath+ViewBag.RecommendProd[i].picture)" class="img-responsive center-block" alt="@ViewBag.RecommendProd[i].title" />
+                                </a>
                             </div>
-                            <img src="/images/center_hmi.png" class="img-responsive center-block" alt="人机界面" />
-                        </a>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12 center-plc-div">
-                    <div class="center-plc">
-                        <a href="product/plc/index.htm" class="thumbnailex">
-                            <div class="caption">
-                                <h3><strong>PLC</strong></h3>
-                                <p class="colorgray">高品质一体化可编程控制器，最具竞争力产品</p>
-                            </div>
-                            <img src="/images/center_plc.png" class="img-responsive center-block" alt="PLC" />
-                        </a>
-                    </div>
-                </div>
-            </div>
+                }
+            }            
         </div>
         <div class="col-md-4">
-            <div class="row">
-                <div class="col-md-12 center-servo-div">
-                    <div class="center-servo">
-                        <a href="product/servo/index.htm" class="thumbnailex">
-                            <div class="caption">
-                                <h3><strong>伺服驱动器/电机</strong></h3>
-                                <p class="colorgray">中德合作的结晶，高品质，高稳定性</p>
+            @if (count > 4)
+            {
+                for (var i = 2; i < 4; i++)
+                {
+                    <div class="row">
+                        <div class="col-md-12 center-hmi-div">
+                            <div class="center-hmi">
+                                <a href="@ViewBag.RecommendProd[i].url" class="thumbnailex">
+                                    <div class="caption">
+                                        <h3><strong>@ViewBag.RecommendProd[i].title</strong></h3>
+                                        <p class="colorgray">@ViewBag.RecommendProd[i].content</p>
+                                    </div>
+                                    <img src="@(Business.Comm.ImgPath+ViewBag.RecommendProd[i].picture)" class="img-responsive center-block" alt="@ViewBag.RecommendProd[i].title" />
+                                </a>
                             </div>
-                            <img src="/images/center_servo.png" class="img-responsive center-block" alt="伺服驱动器/电机" />
-                        </a>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12 center-stepper-div">
-                    <div class="center-stepper">
-                        <a href="product/stepper/index.htm" class="thumbnailex">
-                            <div class="caption">
-                                <h3><strong>步进驱动器/电机</strong></h3>
-                                <p class="colorgray">伺服技术打造的高品质步进驱动系统</p>
-                            </div>
-                            <img src="/images/center_stepper.png" class="img-responsive center-block" alt="步进驱动器/电机" />
-                        </a>
-                    </div>
-                </div>
-            </div>
+                }
+            }     
         </div>
         <div class="col-md-4">
-            <div class="row">
-                <div class="col-md-12 center-vfd-div">
-                    <div class="center-vfd">
-                        <a href="product/vfd/index.htm" class="thumbnailex">
-                            <div class="caption">
-                                <h3><strong>变频器</strong></h3>
-                                <p class="colorgray">矢量，mini，四象限绿色节能</p>
+            @if (count >= 6)
+            {
+                for (var i = 4; i < 6; i++)
+                {
+                    <div class="row">
+                        <div class="col-md-12 center-hmi-div">
+                            <div class="center-hmi">
+                                <a href="@ViewBag.RecommendProd[i].url" class="thumbnailex">
+                                    <div class="caption">
+                                        <h3><strong>@ViewBag.RecommendProd[i].title</strong></h3>
+                                        <p class="colorgray">@ViewBag.RecommendProd[i].content</p>
+                                    </div>
+                                    <img src="@(Business.Comm.ImgPath+ViewBag.RecommendProd[i].picture)" class="img-responsive center-block" alt="@ViewBag.RecommendProd[i].title" />
+                                </a>
                             </div>
-                            <img src="/images/center_vfd.png" class="img-responsive center-block" alt="变频器" />
-                        </a>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12 center-smartfactory-div">
-                    <div class="center-smartfactory">
-                        <a href="product/smartfactory/index.htm" class="thumbnailex">
-                            <div class="caption">
-                                <h3><strong>智慧工厂</strong></h3>
-                                <p class="colorgray" style="margin-bottom:0px;">硬件+软件，服务到底，帮助客户造就成功的小而美的智慧工厂</p>
-                            </div>
-                            <img src="/images/center_smartfactory.png" class="img-responsive center-block" alt="智慧工厂" />
-                        </a>
-                    </div>
-                </div>
-            </div>
+                }
+            }    
         </div>
     </div>
 </div>

@@ -14,6 +14,7 @@ namespace deker_mvc.Controllers
     {
         public ActionResult Index()
         {
+            ViewBag.hideNav = "true";
             ViewBag.RecommendProd = RecommendProduct.Instance.GetRecommendProd();
             return View();
         }
