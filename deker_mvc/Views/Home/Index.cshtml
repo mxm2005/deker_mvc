@@ -61,7 +61,10 @@
     </div>
     <!--ViewBag.RecommendProd-->
     @{ var count = ViewBag.RecommendProd.Count;}
-    
+    <div style="display:none">
+        @foreach (var s in ViewBag.RecommendProd)
+        { @Html.Raw(s.title)}
+    </div>
     <div class="row empty">  
         <div class="col-md-4">
             @if (count > 2)

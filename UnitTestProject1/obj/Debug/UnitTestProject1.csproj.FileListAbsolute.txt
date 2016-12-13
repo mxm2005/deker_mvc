@@ -10,3 +10,13 @@ E:\mxm\mycode\dotnet\deker_mvc\deker_mvc\UnitTestProject1\bin\Debug\Business.dll
 E:\mxm\mycode\dotnet\deker_mvc\deker_mvc\UnitTestProject1\bin\Debug\LinqEF.dll
 E:\mxm\mycode\dotnet\deker_mvc\deker_mvc\UnitTestProject1\bin\Debug\Business.pdb
 E:\mxm\mycode\dotnet\deker_mvc\deker_mvc\UnitTestProject1\bin\Debug\LinqEF.pdb
+D:\Myprj\deker_mvc\UnitTestProject1\bin\Debug\UnitTestProject1.exe.config
+D:\Myprj\deker_mvc\UnitTestProject1\bin\Debug\UnitTestProject1.exe
+D:\Myprj\deker_mvc\UnitTestProject1\bin\Debug\UnitTestProject1.pdb
+D:\Myprj\deker_mvc\UnitTestProject1\bin\Debug\Business.dll
+D:\Myprj\deker_mvc\UnitTestProject1\bin\Debug\LinqEF.dll
+D:\Myprj\deker_mvc\UnitTestProject1\bin\Debug\Business.pdb
+D:\Myprj\deker_mvc\UnitTestProject1\bin\Debug\LinqEF.pdb
+D:\Myprj\deker_mvc\UnitTestProject1\obj\Debug\UnitTestProject1.csprojResolveAssemblyReference.cache
+D:\Myprj\deker_mvc\UnitTestProject1\obj\Debug\UnitTestProject1.exe
+D:\Myprj\deker_mvc\UnitTestProject1\obj\Debug\UnitTestProject1.pdb

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Business;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -10,11 +11,16 @@ namespace UnitTestProject1
     {
         public static void Main(string[] args)
         {
-            //string ss = "<leave g='d' f=':last'><![CDATA[exit]]></leave><leave g='a' f=':first'><![CDATA[edit]]></leave>";
-            //XElement xe = XElement.Parse(ss);
+            Console.WriteLine("begin...");
+            //Test1();
+            test2();
 
-            //Console.WriteLine(xe.ToString());
+            Console.WriteLine("...end");
+            Console.Read();
+        }
 
+        static void Test1()
+        {
             try
             {
                 int af = 0;
@@ -22,7 +28,7 @@ namespace UnitTestProject1
                 var ss = ee / af;
 
             }
-            catch (Exception  ex)
+            catch (Exception ex)
             {
                 Console.Write(ex.ToString());
             }
@@ -41,8 +47,15 @@ namespace UnitTestProject1
             Mxm.Common.TxtOpt.WriteTxt(rootPath + fName, DateTime.Now.ToString());
             Console.WriteLine(rootPath + fName);
             Console.WriteLine(fName);
+        }
 
-            Console.Read();
+        static void test2()
+        {
+            var lst = RecommendProduct.Instance.GetRecommendProd();
+            foreach (var s in lst)
+            {
+                Console.WriteLine(s.id + "--" + s.title + "--" + s.picture);
+            }
         }
     }
 }

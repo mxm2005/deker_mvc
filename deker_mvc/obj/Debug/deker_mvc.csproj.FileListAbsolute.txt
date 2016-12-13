@@ -2,7 +2,6 @@ D:\Myprj\deker_mvc\deker_mvc\bin\deker_mvc.dll.config
 D:\Myprj\deker_mvc\deker_mvc\bin\deker_mvc.dll
 D:\Myprj\deker_mvc\deker_mvc\bin\deker_mvc.pdb
 D:\Myprj\deker_mvc\deker_mvc\bin\Antlr3.Runtime.dll
-D:\Myprj\deker_mvc\deker_mvc\bin\DBEntity.dll
 D:\Myprj\deker_mvc\deker_mvc\bin\EntityFramework.dll
 D:\Myprj\deker_mvc\deker_mvc\bin\Microsoft.Data.Edm.dll
 D:\Myprj\deker_mvc\deker_mvc\bin\Microsoft.Data.OData.dll
@@ -26,10 +25,6 @@ D:\Myprj\deker_mvc\deker_mvc\bin\System.Web.WebPages.Deployment.dll
 D:\Myprj\deker_mvc\deker_mvc\bin\System.Web.WebPages.dll
 D:\Myprj\deker_mvc\deker_mvc\bin\System.Web.WebPages.Razor.dll
 D:\Myprj\deker_mvc\deker_mvc\bin\WebGrease.dll
-D:\Myprj\deker_mvc\deker_mvc\bin\Microsoft.Practices.EnterpriseLibrary.Data.dll
-D:\Myprj\deker_mvc\deker_mvc\bin\Microsoft.Practices.EnterpriseLibrary.Common.dll
-D:\Myprj\deker_mvc\deker_mvc\bin\Microsoft.Practices.ObjectBuilder.dll
-D:\Myprj\deker_mvc\deker_mvc\bin\DBEntity.pdb
 D:\Myprj\deker_mvc\deker_mvc\bin\EntityFramework.xml
 D:\Myprj\deker_mvc\deker_mvc\bin\Newtonsoft.Json.xml
 D:\Myprj\deker_mvc\deker_mvc\bin\System.Net.Http.xml
@@ -48,8 +43,6 @@ D:\Myprj\deker_mvc\deker_mvc\bin\System.Web.Http.OData.xml
 D:\Myprj\deker_mvc\deker_mvc\bin\Microsoft.Data.Edm.xml
 D:\Myprj\deker_mvc\deker_mvc\bin\Microsoft.Data.OData.xml
 D:\Myprj\deker_mvc\deker_mvc\bin\System.Spatial.xml
-D:\Myprj\deker_mvc\deker_mvc\bin\Microsoft.Practices.EnterpriseLibrary.Data.xml
-D:\Myprj\deker_mvc\deker_mvc\bin\Microsoft.Practices.EnterpriseLibrary.Common.xml
 D:\Myprj\deker_mvc\deker_mvc\bin\zh-Hans\EntityFramework.resources.dll
 D:\Myprj\deker_mvc\deker_mvc\bin\zh-Hans\System.Net.Http.resources.dll
 D:\Myprj\deker_mvc\deker_mvc\bin\zh-Hans\System.Net.Http.Formatting.resources.dll
@@ -193,3 +186,5 @@ E:\mxm\mycode\dotnet\deker_mvc\deker_mvc\deker_mvc\bin\Business.dll
 E:\mxm\mycode\dotnet\deker_mvc\deker_mvc\deker_mvc\bin\LinqEF.dll
 E:\mxm\mycode\dotnet\deker_mvc\deker_mvc\deker_mvc\bin\Business.pdb
 E:\mxm\mycode\dotnet\deker_mvc\deker_mvc\deker_mvc\bin\LinqEF.pdb
+D:\Myprj\deker_mvc\deker_mvc\bin\LinqEF.dll
+D:\Myprj\deker_mvc\deker_mvc\bin\LinqEF.pdb
