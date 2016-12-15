@@ -275,3 +275,18 @@
         <div class="col-md-12">&nbsp;</div>
     </div>
 </div>
+
+@section scripts{
+<script type="text/javascript">
+    $(function () {
+        $(".suspend").mouseover(function () {
+            $(this).stop();
+            $(this).animate({ width: 160 }, 400);
+        });
+        $(".suspend").mouseout(function () {
+            $(this).stop();
+            $(this).animate({ width: 40 }, 400);
+        });
+    });
+</script>
+}

@@ -451,10 +451,10 @@
 
 
             <div class="suspend">
-                <script charset="utf-8" src="../wpa.b.qq.com/cgi/wpa.php"></script>
+                @*<script charset="utf-8" src="../wpa.b.qq.com/cgi/wpa.php"></script>
                 <script type="text/javascript">
                     BizQQWPA.addCustom({ aty: '0', a: '0', nameAccount: 4007005281, selector: 'BizQQWPA' });
-                </script>
+                </script>*@
                 <div id="BizQQWPA">
                     <dl>
                         <dt class="IE6PNG"></dt>
@@ -462,49 +462,18 @@
                         <dd class="suspendTel"><a href="javascript:void(0);"></a></dd>
                     </dl>
                 </div>
-                <script src="js/jquery.min.js"></script>
-                <script type="text/javascript">
-                    $(function () {
-                        $(".suspend").mouseover(function () {
-                            $(this).stop();
-                            $(this).animate({ width: 160 }, 400);
-                        });
-                        $(".suspend").mouseout(function () {
-                            $(this).stop();
-                            $(this).animate({ width: 40 }, 400);
-                        });
-                    });
-                </script>
+                
                 <!-- 代码部分end -->
                 <!-- Scripts -->
                 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
                 <!--<script src="/js/jquery.min.js"></script> -->
                 <!-- Include all compiled plugins (below), or include individual files as needed -->
-                <script src="js/bootstrap.min.js"></script>
+                @*<script src="js/bootstrap.min.js"></script>*@
                 <script src="js/jquery.pin.js"></script>
                 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
                 <script src="js/ie10-viewport-bug-workaround.js"></script>
 
-                <script type="text/javascript">
-
-                    function showMenu() {
-                        if (document.body.scrollTop < 120) {
-                            $('#navMenu').removeClass('navbar-fixed-top');
-                            $('#navMenu').addClass('navbar-static-top');
-                        } else {
-                            $('#navMenu').removeClass('navbar-static-top');
-                            $('#navMenu').addClass('navbar-fixed-top');
-                        }
-                    }
-
-                    function setScroll(num) {
-                        $(window).scrollTop(num);
-                    }
-
-                    $('#languagelink').popover();
-
-                    window.onscroll = showMenu;
-                </script>
+                
 
 
 
@@ -512,10 +481,35 @@
         </div>
     </div>
     <!--foot ned-->
-    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/Scripts/jquery.min.js")
+    @Scripts.Render("~/Scripts/bootstrap.min.js")
     @RenderSection("scripts", required: false)    
 </body>
 </html>
+
+
+<script type="text/javascript">
+
+    function showMenu() {
+        if (document.body.scrollTop < 120) {
+            $('#navMenu').removeClass('navbar-fixed-top');
+            $('#navMenu').addClass('navbar-static-top');
+        } else {
+            $('#navMenu').removeClass('navbar-static-top');
+            $('#navMenu').addClass('navbar-fixed-top');
+        }
+    }
+
+    function setScroll(num) {
+        $(window).scrollTop(num);
+    }
+
+    $('#languagelink').popover();
+
+    window.onscroll = showMenu;
+</script>
+
+
 
 <script>
     $(function () {
