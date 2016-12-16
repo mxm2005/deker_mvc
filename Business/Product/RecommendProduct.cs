@@ -19,7 +19,7 @@ namespace Business
         }
         private RecommendProduct()
         {
-            ctx = new CompanyDataContext();
+            
         }
         #endregion
 
@@ -28,6 +28,7 @@ namespace Business
         /// </summary>
         public List<recommend_content> GetRecommendProd()
         {
+            ctx = new CompanyDataContext();
             var reLst = new List<recommend_content>();
             reLst = (from s in ctx.recommend_content
                      where s.group_id == 1
