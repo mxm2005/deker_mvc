@@ -400,6 +400,11 @@
     <Content Include="Content\uploads\datadownload\ab64f00a3664cf6e971bddc9816e84b4.jpg" />
     <Content Include="Content\uploads\datadownload\ab920c517862fa049481e209324b5850.jpg" />
     <Content Include="Content\uploads\datadownload\ac62e71e5f1737e30336b31a2fc28f2e.jpg" />
+    <Content Include="Content\XmlData\banner.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Content\XmlData\html.xml" />
+    <Content Include="Content\XmlData\index.xml" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -488,6 +493,7 @@
     <None Include="Scripts\jquery.validate-vsdoc.js" />
     <Content Include="Scripts\jquery-ui-1.8.24.js" />
     <Content Include="Scripts\jquery-ui-1.8.24.min.js" />
+    <Content Include="Scripts\jquery.livequery.js" />
     <Content Include="Scripts\jquery.min.js" />
     <Content Include="Scripts\jquery.pin.js" />
     <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
@@ -498,6 +504,8 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\knockout-2.2.0.debug.js" />
     <Content Include="Scripts\knockout-2.2.0.js" />
+    <Content Include="Scripts\knockout-3.2.0.min.js" />
+    <Content Include="Scripts\knockout.multimodels-0.1.min.js" />
     <Content Include="Scripts\menu.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Web.config" />

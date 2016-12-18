@@ -18,6 +18,15 @@ namespace deker_mvc.Controllers
             return RecommendProduct.Instance.GetRecommendProd();
         }
 
+        /// <summary>
+        /// 获取Banner
+        /// </summary>
+        /// <returns></returns>
+        [HttpGet]
+        public List<XmlDataEn> getBanners()
+        {
+            return XmlMgr.Instance.GetHomeBanner();
+        }
         
     }
 }

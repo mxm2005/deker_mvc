@@ -5,6 +5,8 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 using System.Text;
+using Business;
+using LinqEF;
 
 namespace deker_mvc.Controllers
 {
@@ -42,6 +44,15 @@ namespace deker_mvc.Controllers
         // DELETE api/values/5
         public void Delete(int id)
         {
+        }
+
+        /// <summary>
+        /// 获取Banner
+        /// </summary>
+        /// <returns></returns>
+        public List<XmlDataEn> getBanners()
+        {
+            return XmlMgr.Instance.GetHomeBanner();
         }
     }
 }

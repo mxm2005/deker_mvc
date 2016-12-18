@@ -482,8 +482,12 @@
     </div>
     <!--foot ned-->
     @Scripts.Render("~/Scripts/jquery.min.js")
+    @Scripts.Render("~/Scripts/jquery.livequery.js")
     @Scripts.Render("~/Scripts/bootstrap.min.js")
-    @RenderSection("scripts", required: false)    
+    @Scripts.Render("~/Scripts/knockout-3.2.0.min.js")
+    @Scripts.Render("~/Scripts/knockout.multimodels-0.1.min.js")
+    @RenderSection("scripts", required: false)
+    
 </body>
 </html>
 

@@ -238,7 +238,25 @@ namespace Business
 
         #endregion
 
-
+        /// <summary>
+        /// 读取XML数据到DataTable返回
+        /// </summary>
+        /// <param name="path">XML文件物理路径</param>
+        /// <returns></returns>
+        public static DataTable ReadToDt(string path)
+        {
+            DataTable dt = null;
+            DataSet ds = new DataSet();
+            if (System.IO.File.Exists(path))
+            {
+                ds.ReadXml(path);
+                if (ds != null && ds.Tables.Count > 0)
+                {
+                    dt = ds.Tables[0];
+                }
+            }
+            return dt;
+        }
     }
 
     /// <summary>

@@ -1,0 +1,23 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table1>
+    <img>Content/uploads/carousel/400.jpg</img>
+    <url />
+    <key>400</key>
+  </Table1>
+  <Table1>
+    <img>Content/uploads/carousel/SZ7.jpg</img>
+    <url />
+    <key>SZ7</key>
+  </Table1>
+  <Table1>
+    <img>Content/uploads/carousel/CM.jpg</img>
+    <url />
+    <key>CM</key>
+  </Table1>
+  <Table1>
+    <img>Content/uploads/carousel/MT4030banner.jpg</img>
+    <url />
+    <key>MT</key>
+  </Table1>
+</NewDataSet>
