@@ -18,7 +18,7 @@ namespace deker_mvc.Controllers
             return View();
         }
 
-        public ActionResult Product()
+        public ActionResult Contact()
         {
             return View();
         }
