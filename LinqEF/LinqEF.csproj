@@ -51,6 +51,9 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
+    <Compile Include="ResponseBaseModel.cs" />
+    <Compile Include="ResponseItemModel.cs" />
+    <Compile Include="ResponseListModel.cs" />
     <Compile Include="XmlDataEn.cs" />
   </ItemGroup>
   <ItemGroup>

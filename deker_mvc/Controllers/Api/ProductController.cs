@@ -18,6 +18,22 @@ namespace deker_mvc.Controllers
             return RecommendProduct.Instance.GetRecommendProd();
         }
 
+        [HttpGet]
+        public ResponseListModel<production> GetProductList(int pageSize, int pageIndex)
+        {
+            var reVal = new ResponseListModel<production>();
+            try
+            {
+                reVal = new ProductMgr().GetProductList(pageSize, pageIndex);
+            }
+            catch (Exception ex)
+            {
+                reVal.Success = false;
+                reVal.Message = ex.Message;
+            }
+            return reVal;
+        }
+
         /// <summary>
         /// 获取Banner
         /// </summary>

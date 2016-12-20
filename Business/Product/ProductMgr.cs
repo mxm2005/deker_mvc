@@ -14,12 +14,15 @@ namespace Business
             ctx = new CompanyDataContext();
         }
 
-        public List<production> GetProductList()
+        public ResponseListModel<production> GetProductList(int pageSize, int pageIndex)
         {
-            var reList = new List<production>();
-
-
-            return reList;
+            var reVal = new ResponseListModel<production>();
+            reVal.List = new List<production>();
+            if(pageIndex<=0)
+                pageIndex=1;
+            reVal.List = ctx.production.Skip((pageIndex - 1) * pageSize).Take(pageSize).ToList();
+            reVal.Total= ctx.production.Count();
+            return reVal;
         }
     }
 }
