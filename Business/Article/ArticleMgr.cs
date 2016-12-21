@@ -3,35 +3,39 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using LinqEF;
+using LinqEF.ReqEn;
 
 namespace Business.Article
 {
     public class ArticleMgr
     {
+        CompanyDataContext ctx = null;
         public ArticleMgr()
         {
-
+            ctx = new CompanyDataContext();
         }
 
-        public List<article> GetList()
+        public ResponseListModel<article> GetArticleList(ReqArticleEn en)
         {
-            return null;
+            var reVal = new ResponseListModel<article>();
+            reVal.List = new List<article>();
+            if (en.PageIndex <= 0)
+                en.PageIndex = 1;
+            var lst = ctx.article.AsQueryable();
+
+            if (en.ArticleType > 0)
+                lst = lst.Where(s => s.type_id == en.ArticleType);
+
+            if (!string.IsNullOrWhiteSpace(en.Title))
+                lst = lst.Where(s => s.title.Contains(en.Title));
+
+            reVal.List = lst.Skip((en.PageIndex - 1) * en.PageSize)
+                .Take(en.PageSize)
+                .ToList();
+            reVal.Total = lst.Count();
+            return reVal;
         }
 
-         /// <summary>
-        /// 分页查询
-        /// </summary>
-        /// <param name="PageSize"></param>
-        /// <param name="PageIndex"></param>
-        /// <param name="fldName">查询字段名</param>
-        /// <param name="strWhere"></param>
-        /// <param name="orderBy">排序字段</param>
-        /// <param name="orderType">排序类型，非 0 值则降序</param>
-        /// <returns></returns>
-        public List<article> GetSolutionList(int PageSize, int PageIndex,string fldName, string strWhere,string orderBy,int orderType)
-        {
-            return null;
-        }
 
     }
 }

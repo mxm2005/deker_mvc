@@ -15,6 +15,7 @@ namespace deker_mvc.Controllers
         public ActionResult Index()
         {
             ViewBag.RecommendProd = RecommendProduct.Instance.GetRecommendProd();
+            ViewBag.Banner = XmlMgr.Instance.GetHomeBanner();
             return View();
         }
 
