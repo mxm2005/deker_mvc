@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="company2" Class="CompanyDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="AppSettings" ConnectionString="Data Source=.;Initial Catalog=company2;User ID=sa" SettingsObjectName="LinqEF.Properties.Settings" SettingsPropertyName="company2ConnectionString" Provider="System.Data.SqlClient" />
+  <Connection Mode="AppSettings" ConnectionString="Data Source=.;Initial Catalog=company2;Persist Security Info=True;User ID=sa" SettingsObjectName="LinqEF.Properties.Settings" SettingsPropertyName="company2ConnectionString1" Provider="System.Data.SqlClient" />
   <Table Name="dbo.art_type" Member="art_type">
     <Type Name="art_type">
       <Column Name="type_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
@@ -61,6 +61,109 @@
   </Table>
   <Table Name="dbo.recommend_content" Member="recommend_content">
     <Type Name="recommend_content">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="title" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="content" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="url" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="picture" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="group_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.art_type" Member="art_type1">
+    <Type Name="art_type1">
+      <Column Name="type_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="type_name" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.recommend_group" Member="recommend_group1">
+    <Type Name="recommend_group1">
+      <Column Name="group_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="group_name" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="remark" Type="System.String" DbType="NVarChar(2000)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.article" Member="article1">
+    <Type Name="article1">
+      <Column Name="aid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="title" Type="System.String" DbType="NVarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="content" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="create_time" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="update_time" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="author" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="sub_title" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="editor" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="status" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="type_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="picture_small" Type="System.String" DbType="NVarChar(400)" CanBeNull="true" />
+      <Column Name="sumary" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.attachment" Member="attachment">
+    <Type Name="attachment">
+      <Column Name="attach_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="path" Type="System.String" DbType="NVarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="depositor_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="depositor_type" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="create_time" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="file_type" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.commend_ref" Member="commend_ref">
+    <Type Name="commend_ref">
+      <Column Name="commend_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ref_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ref_type" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.commend_ref_group" Member="commend_ref_group">
+    <Type Name="commend_ref_group">
+      <Column Name="group_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="group_name" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.download" Member="download">
+    <Type Name="download">
+      <Column Name="down_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="name" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="remark" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="picture" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="path" Type="System.String" DbType="NVarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="sort" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="create_time" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.product_type" Member="product_type1">
+    <Type Name="product_type1">
+      <Column Name="type_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="type_name" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="parent_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="banner" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="remark" Type="System.String" DbType="NVarChar(2000)" CanBeNull="true" />
+      <Column Name="sort" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.production" Member="production1">
+    <Type Name="production1">
+      <Column Name="pid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="product_name" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="product_desc" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="create_time" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="update_time" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="picture" Type="System.String" DbType="NVarChar(400)" CanBeNull="true" />
+      <Column Name="status" Type="System.Decimal" DbType="Decimal(1,0) NOT NULL" CanBeNull="false" />
+      <Column Name="product_type" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="balance" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="product_synopsis" Type="System.String" DbType="NVarChar(2000)" CanBeNull="true" />
+      <Column Name="market_price" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="buy_price" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="sort" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="vidio" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="picture_small" Type="System.String" DbType="NVarChar(400)" CanBeNull="true" />
+      <Column Name="model" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.recommend_content" Member="recommend_content1">
+    <Type Name="recommend_content1">
       <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
       <Column Name="title" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
       <Column Name="content" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />

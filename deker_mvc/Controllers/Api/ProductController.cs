@@ -7,6 +7,7 @@ using System.Web.Http;
 using System.Text;
 using Business;
 using LinqEF;
+using LinqEF.ReqEn;
 
 namespace deker_mvc.Controllers
 {
@@ -18,13 +19,13 @@ namespace deker_mvc.Controllers
             return RecommendProduct.Instance.GetRecommendProd();
         }
 
-        [HttpGet]
-        public ResponseListModel<production> GetProductList(int pageSize, int pageIndex)
+        [HttpPost]
+        public ResponseListModel<production> GetProductList(ReqProductEn en)
         {
             var reVal = new ResponseListModel<production>();
             try
             {
-                reVal = new ProductMgr().GetProductList(pageSize, pageIndex);
+                reVal = new ProductMgr().GetProductList(en);
             }
             catch (Exception ex)
             {

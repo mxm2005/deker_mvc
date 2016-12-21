@@ -26,10 +26,21 @@ namespace LinqEF.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=.\\sql2012;Initial Catalog=company2;User ID=sa;Password=123456")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=.;Initial Catalog=company2;User ID=sa;Password=123456")]
         public string company2ConnectionString {
             get {
                 return ((string)(this["company2ConnectionString"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=.;Initial Catalog=company2;Persist Security Info=True;User ID=sa;Pass" +
+            "word=123456")]
+        public string company2ConnectionString1 {
+            get {
+                return ((string)(this["company2ConnectionString1"]));
             }
         }
     }

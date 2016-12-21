@@ -12,8 +12,8 @@ namespace UnitTestProject1
         public static void Main(string[] args)
         {
             Console.WriteLine("begin...");
-            Test1();
-            //test2();
+            //Test1();
+            test2();
 
             Console.WriteLine("...end");
             Console.Read();
