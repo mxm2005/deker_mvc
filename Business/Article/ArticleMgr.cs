@@ -33,9 +33,17 @@ namespace Business.Article
                 .Take(en.PageSize)
                 .ToList();
             reVal.Total = lst.Count();
+            reVal.Success = true;
             return reVal;
         }
 
+        public ResponseItemModel<article> GetArticle(int aid)
+        {
+            var reVal = new ResponseItemModel<article>();
+            reVal.Item = ctx.article.Where(s => s.aid == aid).FirstOrDefault();
+            reVal.Success = true;
+            return reVal;
+        }
 
     }
 }

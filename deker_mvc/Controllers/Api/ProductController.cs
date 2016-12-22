@@ -34,7 +34,7 @@ namespace deker_mvc.Controllers
             }
             return reVal;
         }
-
+          
         /// <summary>
         /// 获取Banner
         /// </summary>

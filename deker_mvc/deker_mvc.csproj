@@ -544,6 +544,7 @@
     <Content Include="Views\Download\Index.cshtml" />
     <Content Include="Views\Service\Index.cshtml" />
     <Content Include="Views\Solution\Detail.cshtml" />
+    <Content Include="Views\Solution\test.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

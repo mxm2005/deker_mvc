@@ -1,5 +1,6 @@
-﻿@{
-    ViewBag.Title = "Detail";
+﻿@model LinqEF.article
+@{
+    ViewBag.Title = ViewBag.Title ?? "Detail";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
@@ -18,4 +19,73 @@
     </div>
 }
 
-<h2>Detail</h2>
+<div class="container">
+    <div class="row pintop">
+        <div class="col-md-9">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2><strong>@Model.title</strong></h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-10">
+                    <h3 style="margin:0px;padding:0px 0px 10px 0px;"><small></small></h3>
+                </div>
+                <div class="col-md-2" style="margin-bottom:10px;">
+                    <!-- JiaThis Button BEGIN -->
+                    <div class="jiathis_style">
+                        <span class="jiathis_txt colorred" style="font-size:12px;">分享到：</span>
+                        <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank"></a>
+                    </div>
+                    <script type="text/javascript">
+<!--
+          var jiathis_config={
+            hideMore:true
+          };
+          --></script>
+                    <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+                    <!-- JiaThis Button END -->
+                </div>
+            </div>
+            <div class="row" style="margin-left:0px;border-top:2px dotted #dcdcdc;">
+                <div class="col-md-12">
+                    &nbsp;
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    @Model.content
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="pinned" style="padding-top:60px">
+                <div class="row">
+                    <div class="col-md-12 text-right">
+                        &nbsp;<br /><br />
+                    </div>
+                    <div class="col-md-12 text-right">
+                        <a href="javascript:history.go(-1);"><i class="icon-reply icon-2x colorred"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">&nbsp;</div>
+    </div>
+    <hr style="border-top:3px solid #dcdcdc;margin-bottom:5px;" />
+    <div class="row">
+        <div class="col-md-3">
+        </div>
+        <div class="col-md-6 text-right">
+            <a href="/solution/detail?id=34&type=all">下一篇:中空玻璃全自动打胶机自动化解决方案&gt;&gt;</a>
+        </div>
+        <div class="col-md-3">
+            &nbsp;
+        </div>
+    </div>
+    <div class="row" style="height:50px;">
+        <div class="col-md-12">&nbsp;</div>
+    </div>
+</div>

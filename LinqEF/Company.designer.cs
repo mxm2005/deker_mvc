@@ -63,7 +63,7 @@ namespace LinqEF
     #endregion
 		
 		public CompanyDataContext() : 
-				base(global::LinqEF.Properties.Settings.Default.company2ConnectionString1, mappingSource)
+				base(global::LinqEF.Properties.Settings.Default.company2ConnectionString, mappingSource)
 		{
 			OnCreated();
 		}
