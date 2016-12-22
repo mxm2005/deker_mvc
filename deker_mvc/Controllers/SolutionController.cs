@@ -28,5 +28,10 @@ namespace deker_mvc.Controllers
             }
             return View(reVal);
         }
+
+        public ActionResult test()
+        {
+            return View();
+        }
     }
 }

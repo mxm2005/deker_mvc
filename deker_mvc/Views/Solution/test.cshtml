@@ -5,4 +5,29 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>test</h2>
+<div class="text-center">
+    <div class="pagination"></div>
+</div>
+
+@section scripts{
+<script src="/Scripts/pager.js"></script>
+<script>
+    $('.pagination').bsPagination({
+        totalRecord: 200,
+        recordPerPage: 10,
+        currentPage: 3,
+        setLinkAttr: function (page) {alert(page)
+            return 'href="#/page/' + page + '"';
+        }
+    });
+
+    
+    $('.pagination').on('click', 'a', function () {
+        $('.pagination').bsPagination({
+            totalRecord: 200,
+            currentPage: $(this).data('page')
+        });
+    });
+</script>
+
+}
