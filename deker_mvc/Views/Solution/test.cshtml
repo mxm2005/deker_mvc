@@ -16,7 +16,7 @@
         totalRecord: 200,
         recordPerPage: 10,
         currentPage: 3,
-        setLinkAttr: function (page) {alert(page)
+        setLinkAttr: function (page) {
             return 'href="#/page/' + page + '"';
         }
     });
@@ -25,7 +25,10 @@
     $('.pagination').on('click', 'a', function () {
         $('.pagination').bsPagination({
             totalRecord: 200,
-            currentPage: $(this).data('page')
+            currentPage: $(this).data('page'),
+            setLinkAttr: function (page) {
+                return 'href="#/page/' + page + '"';
+            }
         });
     });
 </script>
