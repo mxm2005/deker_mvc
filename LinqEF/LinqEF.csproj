@@ -51,6 +51,7 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
+    <Compile Include="ReqEn\ReqDownEn.cs" />
     <Compile Include="ReqEn\ReqBaseEn.cs" />
     <Compile Include="ReqEn\ReqArticleEn.cs" />
     <Compile Include="ReqEn\ReqProductEn.cs" />

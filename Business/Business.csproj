@@ -44,6 +44,7 @@
   <ItemGroup>
     <Compile Include="Article\ArticleMgr.cs" />
     <Compile Include="Common.cs" />
+    <Compile Include="Download\DownloadMgr.cs" />
     <Compile Include="Product\ProductMgr.cs" />
     <Compile Include="Product\RecommendProduct.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -110,17 +110,13 @@
 <div class="container">
     <div class="row">
         <div class="col-md-12 col-xs-12 text-right">
-            <ul class="pagination">
-                <li class="disabled"><span>&laquo;</span></li>
-                <li class="active"><span>1</span></li>
-                <li><a href="query_41878854">2</a></li>
-                <li><a href="query_41878854" rel="next">&raquo;</a></li>
-            </ul>
+            <ul class="pagination"></ul>
         </div>
     </div>
 </div>
 
 @section scripts{
+    <script src="/Scripts/pager.js"></script>
     <script>
         function ViewModel(config) {
             var self = this;
@@ -128,26 +124,41 @@
             var urlSolution = "/api/Article/GetArticleList";
             self.lstSolution = ko.observableArray([]);
 
-            self.GetSolutionList = function () {
+            self.GetSolutionList = function (curPage) {
                 $.ajax({
                     url: urlSolution + "?d=" + new Date(),
                     type: "post",
                     async: true,
-                    data: {pageSize:10,articleType:5},
+                    data: { pageSize: 10, pageIndex: curPage, articleType: 5 },
                     beforeSend: function () {
                     },
                     success: function (d) {
+                        self.lstSolution.removeAll();
                         for (var i = 0; i < d.List.length; i++) {
                             self.lstSolution.push(d.List[i]);
                         }
+                        self.setPager(d.Total, curPage);
                     }
                 });
             }
-            self.GetSolutionList();
+
+            self.setPager = function (total,curPage) {
+                $('.pagination').bsPagination({
+                    totalRecord: total,
+                    recordPerPage: 10,
+                    currentPage: curPage,
+                    setLinkAttr: function (page) {
+                        return 'href="javascript:vm.GetSolutionList('+page+')"'
+                    }
+                }); 
+            }
+            self.GetSolutionList(1);
         }
+        
+        var vm = null;
         $(function () {
-            var viewModel = new ViewModel(null);
-            ko.attach("viewModel", viewModel);
+            vm = new ViewModel(null);
+            ko.attach("viewModel", vm);
         });
     </script>
 }
