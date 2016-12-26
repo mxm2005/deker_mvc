@@ -555,6 +555,7 @@
     <Content Include="Views\Service\Index.cshtml" />
     <Content Include="Views\Solution\Detail.cshtml" />
     <Content Include="Views\Solution\test.cshtml" />
+    <Content Include="Views\About\_Qualification.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
