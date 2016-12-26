@@ -46,6 +46,7 @@
     <Compile Include="Common.cs" />
     <Compile Include="Download\DownloadMgr.cs" />
     <Compile Include="Product\ProductMgr.cs" />
+    <Compile Include="Product\ProductTypeMgr.cs" />
     <Compile Include="Product\RecommendProduct.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="XmlData\XmlMgr.cs" />

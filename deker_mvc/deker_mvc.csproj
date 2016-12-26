@@ -465,6 +465,7 @@
     <Content Include="Images\icon_service_repair_2.png" />
     <Content Include="Images\icon_tel.png" />
     <Content Include="Images\language_icon.png" />
+    <Content Include="Images\logo_andly.png" />
     <Content Include="Images\logo_kinco.png" />
     <Content Include="Images\nopic.jpg" />
     <Content Include="Images\pic_solution_3c.png" />
@@ -555,6 +556,7 @@
     <Content Include="Views\Service\Index.cshtml" />
     <Content Include="Views\Solution\Detail.cshtml" />
     <Content Include="Views\Solution\test.cshtml" />
+    <Content Include="Views\Home\Search.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

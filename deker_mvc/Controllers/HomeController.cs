@@ -19,7 +19,7 @@ namespace deker_mvc.Controllers
             return View();
         }
 
-        public ActionResult Contact()
+        public ActionResult Search()
         {
             return View();
         }
