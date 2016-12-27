@@ -187,6 +187,10 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\font-awesome.css" />
     <Content Include="Content\main_new.css" />
+    <Content Include="Content\uploads\carousel\20133114013143a1.jpg" />
+    <Content Include="Content\uploads\carousel\20133114013143a2.jpg" />
+    <Content Include="Content\uploads\carousel\20133114013143a3.jpg" />
+    <Content Include="Content\uploads\carousel\201353220253412013020408.jpg" />
     <Content Include="Content\uploads\carousel\400.jpg" />
     <Content Include="Content\uploads\carousel\CD422.jpg" />
     <Content Include="Content\uploads\carousel\CM.jpg" />
