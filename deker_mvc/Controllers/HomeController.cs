@@ -24,6 +24,11 @@ namespace deker_mvc.Controllers
             return View();
         }
 
+        public ActionResult ProductList()
+        {
+            return View();
+        }
+
         #region support methord
 
         
