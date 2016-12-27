@@ -556,11 +556,8 @@
     <Content Include="Views\Service\Index.cshtml" />
     <Content Include="Views\Solution\Detail.cshtml" />
     <Content Include="Views\Solution\test.cshtml" />
-<<<<<<< HEAD
     <Content Include="Views\Home\Search.cshtml" />
-=======
     <Content Include="Views\About\_Qualification.cshtml" />
->>>>>>> 2ba387a6dcb952b6ac0f96dc817ccccaf808641e
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
