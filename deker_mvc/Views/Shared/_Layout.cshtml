@@ -115,68 +115,22 @@
                         </button>
                     </div>
 
-                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <!-- Collect the nav links, forms, and other content for toggling data-toggle="dropdown"-->
                     <div class="collapse navbar-collapse" id="navbarmenu">
                         <ul class="nav navbar-nav" style="width:100%;">
-                            <li class="dropdown col-sm-home-1 col-md-home-1 col-lg-home-1 background-navHead text-center menu-product">
-                                <a class="dropdown-toggle background-red cursor-pointer" data-toggle="dropdown" role="button" aria-expanded="false" href="#"><span class="nav-text">产品中心</span></a>
-                                <ul class="dropdown-menu popover bottom" role="menu" style="width:100%;">
-                                    <li class="arrow"></li>
+                            <li class="dropdown col-sm-home-1 col-md-home-1 col-lg-home-1 background-navHead text-center menu-product" data-model="vmMenu"
+                                <a class="dropdown-toggle background-red cursor-pointer"  role="button" aria-expanded="false" href="#"><span class="nav-text">产品中心</span></a>
+                                <ul class="dropdown-menu popover bottom" role="menu" style="width:100%;" data-bind="foreach:menuLst">
+                                    @*<li class="arrow"></li>*@
                                     <li class="nav-menu-hmi" onclick="window.location.href='/product/hmi'">
-                                        <span><a class="nav-menu-sub-title" href="product/hmi/index.htm">人机界面</a></span><br />
-                                        <span>
+                                        <span><a class="nav-menu-sub-title" data-bind="text:type_name,attr:{href:'~/home/ProductList/'+ type_id }"></a></span><br />
+                                        <span>  
                                             <a class="nav-menu-sub-detail" href="productById_079E9298">MT4230T</a>&nbsp;&nbsp;
                                             <a class="nav-menu-sub-detail" href="productById_0E561AA6">MT4434T</a>&nbsp;&nbsp;
                                             <a class="nav-menu-sub-detail" href="productById_1407F555">MT4532T</a>&nbsp;&nbsp;
                                             <a class="nav-menu-sub-detail" href="productById_7D10A40B">F7</a>&nbsp;&nbsp;
                                             <a class="nav-menu-sub-detail" href="productById_D7405566">F10</a>&nbsp;&nbsp;
                                         </span>
-                                    </li>
-                                    <li class="nav-menu-plc" onclick="window.location.href='/product/plc'">
-                                        <span><a class="nav-menu-sub-title" href="product/plc/index.htm">PLC</a></span><br />
-                                        <span>
-                                            <a class="nav-menu-sub-detail" href="productById_BBC25D16">K506EA-30AT</a>&nbsp;&nbsp;
-                                            <a class="nav-menu-sub-detail" href="productById_36DD0E5B">F122-D1608T</a>&nbsp;&nbsp;
-                                            <a class="nav-menu-sub-detail" href="productById_47DDFECD">Kinco_K205_16DT</a>&nbsp;&nbsp;
-                                            <a class="nav-menu-sub-detail" href="productById_0DC7A13C">EKC88M</a>&nbsp;&nbsp;
-                                            <a class="nav-menu-sub-detail" href="productById_6FA42D9D">KR104</a>&nbsp;&nbsp;
-                                        </span>
-                                    </li>
-                                    <li class="nav-menu-servo" onclick="window.location.href='/product/servo'">
-                                        <span><a class="nav-menu-sub-title" href="product/servo/index.htm">伺服系统</a></span><br />
-                                        <span>
-                                            <a class="nav-menu-sub-detail" href="productById_9FE0E07D">FD122-CA-000</a>&nbsp;&nbsp;
-                                            <a class="nav-menu-sub-detail" href="productById_AAF38EDC">FD432S-CA-000</a>&nbsp;&nbsp;
-                                        </span>
-                                    </li>
-                                    <li class="nav-menu-stepper" onclick="window.location.href='/product/stepper'">
-                                        <span><a class="nav-menu-sub-title" href="product/stepper/index.htm">步进系统</a></span><br />
-                                        <span>
-                                            <a class="nav-menu-sub-detail" href="productById_2AE58289">FM860-AA-000</a>&nbsp;&nbsp;
-                                            <a class="nav-menu-sub-detail" href="productById_2AA09A41">2CM880</a>&nbsp;&nbsp;
-                                            <a class="nav-menu-sub-detail" href="productById_15A76ACF">2CM860</a>&nbsp;&nbsp;
-                                            <a class="nav-menu-sub-detail" href="productById_10656803">2CM0870</a>&nbsp;&nbsp;
-                                        </span>
-                                    </li>
-                                    <li class="nav-menu-vfd" onclick="window.location.href='/product/vfd'">
-                                        <span><a class="nav-menu-sub-title" href="product/vfd/index.htm">变频器</a></span><br />
-                                        <span>
-                                            <a class="nav-menu-sub-detail" href="productById_4ED2E996">CV20-2S-0015G</a>&nbsp;&nbsp;
-                                            <a class="nav-menu-sub-detail" href="productById_9C5A0A1F">CV100-2S-0022G</a>&nbsp;&nbsp;
-                                        </span>
-                                    </li>
-                                    <li class="nav-menu-sf" onclick="window.location.href='/product/smartfactory'">
-                                        <span><a class="nav-menu-sub-title" href="product/smartfactory/index.htm">智慧工厂</a></span><br />
-                                        <span>
-                                            <a class="nav-menu-sub-detail" href="productById_B35DFABF">X10</a>&nbsp;&nbsp;
-                                            <a class="nav-menu-sub-detail" href="productById_A465753D">智能电子看板47&quot;</a>&nbsp;&nbsp;
-                                            <a class="nav-menu-sub-detail" href="productById_1B5E43C3">SMD智能电子货架</a>&nbsp;&nbsp;
-                                            <a class="nav-menu-sub-detail" href="productById_0B83D052">教仪智能立库</a>&nbsp;&nbsp;
-                                        </span>
-                                    </li>
-                                    <li class="nav-menu-tuishi" onclick="window.location.href='/product/closure?type=1'">
-                                        <span><a class="nav-menu-sub-title" href="product/closure_E935631E">停产及替换</a></span><br />
-                                        <span><a class="nav-menu-sub-detail" href="product/closure_E935631E">即将停产&已停产替代信息</a></span>
                                     </li>
                                 </ul>
                             </li>
@@ -463,9 +417,9 @@
     <!--foot ned-->
     @Scripts.Render("~/Scripts/jquery.min.js")
     @Scripts.Render("~/Scripts/jquery.livequery.js")
-    @Scripts.Render("~/Scripts/bootstrap.min.js")
     @Scripts.Render("~/Scripts/knockout-3.2.0.min.js")
     @Scripts.Render("~/Scripts/knockout.multimodels-0.1.min.js")
+    @Scripts.Render("~/Scripts/bootstrap.min.js")
     @RenderSection("scripts", required: false)
     
 </body>
@@ -496,6 +450,33 @@
 
 
 <script>
+    function VMMenu(config) {
+        var self = this;
+        var url = "/api/ProductType/GetMenuProductTypeList";
+
+        self.menuLst = ko.observableArray([]);
+
+        self.loadMenu = function () {
+            $.ajax(url, {
+                type: "get",
+                async: true,
+                beforeSend: function () {
+                },
+                success: function (d) {
+                    self.menuLst.removeAll();
+                    for (var i = 0; i < d.List.length; i++) {
+                        self.menuLst.push(d.List[i]);
+                    }
+                    $('.dropdown-menu').dropdown()
+                }
+            });
+        }         
+        self.loadMenu();
+    }
+    var vmMenu = new VMMenu();
+    ko.attach("vmMenu", vmMenu);
+
+
     $(function () {
         var menuLst = $("li.col-sm-home-2");
         var url = '@Request.Url.ToString()';

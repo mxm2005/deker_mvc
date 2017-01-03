@@ -168,6 +168,7 @@
     <Compile Include="BaseController.cs" />
     <Compile Include="Controllers\Api\DownController.cs" />
     <Compile Include="Controllers\Api\ArticleController.cs" />
+    <Compile Include="Controllers\Api\ProductTypeController.cs" />
     <Compile Include="Controllers\Api\ProductController.cs" />
     <Compile Include="Controllers\ServiceController.cs" />
     <Compile Include="Controllers\SolutionController.cs" />

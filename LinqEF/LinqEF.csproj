@@ -55,6 +55,7 @@
     <Compile Include="ReqEn\ReqBaseEn.cs" />
     <Compile Include="ReqEn\ReqArticleEn.cs" />
     <Compile Include="ReqEn\ReqProductEn.cs" />
+    <Compile Include="ResModel\NestedProductType.cs" />
     <Compile Include="ResModel\ResponseBaseModel.cs" />
     <Compile Include="ResModel\ResponseItemModel.cs" />
     <Compile Include="ResModel\ResponseListModel.cs" />
