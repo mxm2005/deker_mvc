@@ -139,7 +139,7 @@ li.background-nav.active {
 }
 
 .nav-menu-hmi {
-	height:80px;
+	height:110px;
 	background: #ffffff url(../images/product_hmi.png) 0 50% no-repeat;
 	padding-left: 30%;
 	padding-top:10px;
