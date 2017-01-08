@@ -1,0 +1,122 @@
+﻿@model LinqEF.product_type
+@{
+    ViewBag.Title = "ProductType";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section navbar{
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <ol class="breadcrumb" style="padding-left:0px;padding-bottom:5px;margin-bottom:5px;">
+                    <li><a href="/">首页</a></li>
+                    <li><a href="/home/productlist">产品中心</a></li>
+                    <li class="active">@Model.type_name</li>
+                </ol>
+                <hr style="border-top:3px solid #D70000;margin-top:0px;" />
+            </div>
+        </div>
+    </div>
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 col-xs-12">
+            &nbsp;
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 col-xs-12 table-responsive">
+            <div class="table-responsive">
+                <table class="table table-bordered table-striped table-hover" data-model="viewModel">
+                    <thead>
+                        <tr>
+                            <th colspan="2" class="table-head-th">型号</th>
+                            <th class="table-head-th">名称</th>
+                            <th class="table-head-th">描述</th>
+                        </tr>
+                    </thead>
+                    <tbody data-bind="foreach:lstProduct">
+                        <tr class="table-body-td">
+                            <td style="width:100px;"><img data-bind="attr:{alt:product_name,src:'/Content/uploads/img/'+picture}" style="width:80px;" class="img-responsive center-block" /></td>
+                            <td style="vertical-align: middle; width: 100px;">
+                                <a href="#" data-bind="attr:{href:'/home/Product/'+pid},text:model" primarykey="18" style="font-weight:bold"></a>
+                            </td>
+                            <td style="vertical-align:middle;width:250px;">
+                                <a href="#" data-bind="attr:{href:'/home/Product/'+pid},text:product_name" primarykey="18" style="font-weight:bold"></a>
+                            </td>
+                            <td style="vertical-align:middle;" data-bind="html:product_synopsis"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 col-xs-12 text-right">
+            <ul class="pagination"></ul>
+        </div>
+    </div>
+</div>
+
+@section scripts{
+    <script src="/Scripts/pager.js"></script>
+    <script>
+        function ViewModel(config) {
+            var self = this;
+            //初始化整个界面用到的api地址
+            var urlProduct = "/api/Product/GetProductList";
+
+            self.lstProduct = ko.observableArray([]);
+
+            self.GetProductList = function (curPage) {
+                $.ajax({
+                    url: urlProduct + "?d=" + new Date(),
+                    type: "post",
+                    async: true,
+                    data: { pageSize: 10, pageIndex: curPage,id:'@Model.type_id' },
+                    beforeSend: function () {
+                    },
+                    success: function (d) {
+                        self.lstProduct.removeAll();
+                        for (var i = 0; i < d.List.length; i++) {
+                            self.lstProduct.push(d.List[i]);
+                        }
+                        self.setPager(d.Total, curPage);
+                    }
+                });
+            }
+
+            self.setPager = function (total, curPage) {
+                $('.pagination').bsPagination({
+                    totalRecord: total,
+                    recordPerPage: 10,
+                    currentPage: curPage,
+                    setLinkAttr: function (page) {
+                        return 'href="javascript:vm.GetProductList(' + page + ')"'
+                    }
+                });
+            }
+
+            self.fixImg = function (pic) {
+                if (pic && pic != '') {
+                    return '/Content/uploads/img/' + pic;
+                } esle
+                {
+                    return '/images/nopic.jpg';
+                }
+            }
+
+            self.GetProductList(1);
+        }
+
+        var vm = null;
+        $(function () {
+            vm = new ViewModel(null);
+            ko.attach("viewModel", vm);
+        });
+    </script>
+}

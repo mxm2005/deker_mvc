@@ -75,5 +75,15 @@ namespace Business
             var lst = ctx.product_type.ToList();
             return lst;
         }
+
+        /// <summary>
+        /// 获取单个产品分类实体
+        /// </summary>
+        /// <param name="type_id"></param>
+        /// <returns></returns>
+        public product_type GetProductType(int type_id)
+        {
+            return ctx.product_type.Where(s => s.type_id == type_id).FirstOrDefault();
+        }
     }
 }

@@ -45,5 +45,13 @@ namespace Business.Article
             return reVal;
         }
 
+        public ResponseItemModel<article> GetNextArticle(int aid)
+        {
+            var reVal = new ResponseItemModel<article>();
+            reVal.Item = ctx.article.Where(s => s.aid > aid).FirstOrDefault();
+            reVal.Success = true;
+            return reVal;
+        }
+
     }
 }

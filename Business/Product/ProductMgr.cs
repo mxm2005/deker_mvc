@@ -35,5 +35,11 @@ namespace Business
             reVal.Total= lst.Count();
             return reVal;
         }
+
+        public ResponseItemModel<production> GetProduct(int pid)
+        {
+            return null;
+
+        }
     }
 }

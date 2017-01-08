@@ -381,6 +381,8 @@
     <Content Include="Views\Home\Search.cshtml" />
     <Content Include="Views\About\Qualification.cshtml" />
     <Content Include="Views\Home\ProductList.cshtml" />
+    <Content Include="Views\Home\ProductType.cshtml" />
+    <Content Include="Views\Home\Product.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
