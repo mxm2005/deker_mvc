@@ -11,7 +11,7 @@
                 <ol class="breadcrumb" style="padding-left:0px;padding-bottom:5px;margin-bottom:5px;">
                     <li><a href="/">首页</a></li>
                     <li><a href="/solution">行业方案</a></li>
-                    <li class="active">@ViewBag.Title</li>
+                    <li class="active">@Model.title</li>
                 </ol>
                 <hr style="border-top:3px solid #D70000;margin-top:0px;" />
             </div>
@@ -79,7 +79,7 @@
         <div class="col-md-3">
         </div>
         <div class="col-md-6 text-right">
-            <a href="/solution/detail?id=34&type=all">下一篇:中空玻璃全自动打胶机自动化解决方案&gt;&gt;</a>
+            <a href="/solution/detail/@ViewBag.nextid">下一篇:@ViewBag.title&gt;&gt;</a>
         </div>
         <div class="col-md-3">
             &nbsp;

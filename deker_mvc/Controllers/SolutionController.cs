@@ -26,6 +26,9 @@ namespace deker_mvc.Controllers
                 reVal = art.Item;
                 ViewBag.Title = art.Item.title;
             }
+            var next = new Business.Article.ArticleMgr().GetNextArticle(id);
+            ViewBag.nextid = next.Item.aid;
+            ViewBag.title = next.Item.title;
             return View(reVal);
         }
 
